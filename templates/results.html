@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block title %}Suchergebnisse{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <h1>Suchergebnisse</h1>
+        {% if books %}
+            <form method="POST" action="/favorites">
+                <div class="card-container">
+                    <!-- Iteriere durch die Liste der Bücher -->
+                    {% for book in books %}
+                        <div class="card">
+                            <h2>{{ book.title }}</h2>
+                            <p><strong>Autor:</strong> {{ book.author }}</p>
+                            <p><strong>ISBN:</strong> {{ book.isbn }}</p>
+                            <p><strong>Erscheinungsjahr:</strong> {{ book.publication_year }}</p>
+                            
+                            <!-- "Mehr Infos" Button und Beschreibung -->
+                            <button type="button" class="btn-small" onclick="toggleDescription({{ loop.index }})">Mehr Infos</button>
+                            <div id="description-{{ loop.index }}" class="book-description" style="display: none;">
+                                <p>{{ book.description }}</p>  <!-- Stelle sicher, dass die Beschreibung hier übergeben wird -->
+                            </div>
+                            
+                            <p>
+                                <input type="checkbox" name="selected_books" value="{{ book.isbn }}">
+                                Zu Favoriten hinzufügen
+                            </p>
+                        </div>
+                    {% endfor %}
+                </div>
+                <button type="submit" class="btn-large">Favoriten speichern</button>
+            </form>
+        {% else %}
+            <p>Keine Bücher gefunden.</p>
+        {% endif %}
+    </div>
+{% endblock %}

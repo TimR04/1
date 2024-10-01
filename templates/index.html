@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block title %}Startseite{% endblock %}
+
+{% block content %}
+    <div class="container home-container">
+        <h1>Willkommen zur Büchersuche</h1>
+        <p>Wähle eine der folgenden Optionen:</p>
+        <div class="home-buttons">
+            <a href="/search" class="btn-large">Suchanfrage stellen</a>
+            <a href="/favorites" class="btn-large">Favoriten anzeigen</a>
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}My Book App{% endblock %}</title>
+    
+    <!-- Google Fonts - Roboto -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="/static/styles.css">
+
+    <!-- JavaScript für das Umschalten der Beschreibung -->
+    <script>
+        function toggleDescription(index) {
+            var description = document.getElementById('description-' + index);
+            if (description.style.display === 'none') {
+                description.style.display = 'block';
+            } else {
+                description.style.display = 'none';
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="/">Startseite</a></li>
+                    <li><a href="/search">Bücher suchen</a></li>
+                    <li><a href="/favorites">Favoriten</a></li>
+                    {% if session.user_id %}
+                        <li><a href="/logout">Abmelden</a></li>
+                    {% else %}
+                        <li><a href="/login">Anmelden</a></li>
+                        <li><a href="/register">Registrieren</a></li>
+                    {% endif %}
+                </ul>
+            </nav>
+        </header>
+        
+        <div class="content">
+            {% block content %}{% endblock %}
+        </div>
+        
+        <footer>
+            <p>&copy; 2024 My Book App</p>
+        </footer>
+    </div>
+</body>
+</html>

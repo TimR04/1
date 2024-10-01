@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+
+{% block title %}Deine Favoriten{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <h1>Deine Favoriten</h1>
+
+        {% if favorites %}
+            <form method="POST" action="/remove_favorites">
+                <div class="card-container">
+                    {% for book in favorites %}
+                        <div class="card" id="card-{{ loop.index }}" onclick="toggleCardSelection({{ loop.index }})">
+                            <!-- Checkbox für die Auswahl der Favoriten -->
+                            <label>
+                                <input type="checkbox" name="selected_books" value="{{ book.isbn }}" id="checkbox-{{ loop.index }}">
+                                <span>Kachel auswählen</span>
+                            </label>
+                            <h2>{{ book.title }}</h2>
+                            <p><strong>Autor:</strong> {{ book.author }}</p>
+                            <p><strong>ISBN:</strong> {{ book.isbn }}</p>
+                            <p><strong>Erscheinungsjahr:</strong> {{ book.publication_year }}</p>
+
+                            <!-- "Mehr Infos" Button und Beschreibung -->
+                            <button type="button" class="btn-small" onclick="toggleDescription({{ loop.index }})">Mehr Infos</button>
+                            <div id="description-{{ loop.index }}" class="book-description" style="display: none;">
+                                <p>{{ book.description }}</p>  <!-- Buchbeschreibung anzeigen -->
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+
+                <!-- Button zum Entfernen der ausgewählten Favoriten -->
+                <button type="submit" class="btn-large">Ausgewählte Favoriten entfernen</button>
+            </form>
+        {% else %}
+            <p>Du hast noch keine Favoriten gespeichert.</p>
+        {% endif %}
+    </div>
+{% endblock %}
+
+<!-- JavaScript Code zur Kachel-Hervorhebung und Beschreibung -->
+<script>
+    // Umschaltet die Anzeige der Buchbeschreibung
+    function toggleDescription(index) {
+        var description = document.getElementById('description-' + index);
+        description.style.display = (description.style.display === 'none') ? 'block' : 'none';
+    }
+
+    // Umschaltet die Auswahl einer Kachel und hebt sie visuell hervor
+    function toggleCardSelection(index) {
+        var card = document.getElementById('card-' + index);
+        var checkbox = document.getElementById('checkbox-' + index);
+
+        // Kachel auswählen/abwählen
+        if (checkbox.checked) {
+            card.classList.remove('selected');
+            checkbox.checked = false;
+        } else {
+            card.classList.add('selected');
+            checkbox.checked = true;
+        }
+    }
+</script>
