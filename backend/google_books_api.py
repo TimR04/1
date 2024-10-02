@@ -8,7 +8,7 @@ def search_books(field_of_interest, specific_topic):
     data = response.json()
 
     books = []
-    for item in data.get('items', [])[:5]:  # Begrenzung auf 5 Bücher
+    for item in data.get('items', [])[:10]:  # Begrenzung auf 10 Bücher
         book_info = item.get('volumeInfo', {})
 
         # Füge die Buchbeschreibung hinzu

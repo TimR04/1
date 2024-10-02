@@ -19,22 +19,7 @@
                 <option value="Chemie">Chemie</option>
                 <option value="Medizin">Medizin</option>
                 <option value="Informatik">Informatik</option>
-                <option value="Ingenieurwesen">Ingenieurwesen</option>
-                <option value="Umweltwissenschaften">Umweltwissenschaften</option>
-                <option value="Philosophie">Philosophie</option>
-                <option value="Geschichte">Geschichte</option>
-                <option value="Kunstwissenschaften">Kunstwissenschaften</option>
-                <option value="Musikwissenschaft">Musikwissenschaft</option>
-                <option value="Soziologie">Soziologie</option>
-                <option value="Pädagogik">Pädagogik</option>
-                <option value="Psychologie">Psychologie</option>
-                <option value="Politikwissenschaft">Politikwissenschaft</option>
-                <option value="Rechtswissenschaften">Rechtswissenschaften</option>
-                <option value="Geografie">Geografie</option>
-                <option value="Sportwissenschaften">Sportwissenschaften</option>
-                <option value="Astronomie">Astronomie</option>
-                <option value="Meteorologie">Meteorologie</option>
-                <option value="Ozeanografie">Ozeanografie</option>
+                <!-- Weitere Kategorien -->
             </select>
             <button type="submit" class="btn-small">Filtern</button>
         </form>
@@ -70,24 +55,3 @@
         {% endif %}
     </div>
 {% endblock %}
-
-<!-- JavaScript Code zur Kachel-Hervorhebung und Beschreibung -->
-<script>
-    function toggleDescription(index) {
-        var description = document.getElementById('description-' + index);
-        description.style.display = (description.style.display === 'none') ? 'block' : 'none';
-    }
-
-    function toggleCardSelection(index) {
-        var card = document.getElementById('card-' + index);
-        var checkbox = document.getElementById('checkbox-' + index);
-
-        if (checkbox.checked) {
-            card.classList.remove('selected');
-            checkbox.checked = false;
-        } else {
-            card.classList.add('selected');
-            checkbox.checked = true;
-        }
-    }
-</script>
