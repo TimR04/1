@@ -124,3 +124,7 @@ def remove_favorites_view():
             database.remove_favorites(session['user_id'], selected_isbns)
         return redirect(url_for('favorites'))  # Leitet zur Favoritenliste zurück
     return redirect(url_for('login'))
+
+
+
+#Ignore
