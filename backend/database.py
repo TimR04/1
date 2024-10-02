@@ -116,3 +116,19 @@ def remove_favorites(user_id, selected_isbns):
     
     conn.commit()
     conn.close()
+
+
+def get_favorites_by_category(user_id, category):
+    """
+    Diese Funktion ruft die Favoriten eines Benutzers ab, die einer bestimmten Kategorie entsprechen.
+    """
+    conn = connect_db()
+    cur = conn.cursor()
+
+    # Favoriten nach Kategorie für den Benutzer abrufen
+    cur.execute("SELECT book_title, author, isbn, publication_year, category FROM favorites WHERE user_id = ? AND category = ?", (user_id, category))
+    favorites = cur.fetchall()
+    conn.close()
+
+    # Favoriten in ein lesbares Format umwandeln
+    return [{'title': row[0], 'author': row[1], 'isbn': row[2], 'publication_year': row[3], 'category': row[4]} for row in favorites]

@@ -223,3 +223,33 @@ footer {
     display: block;
 }
 
+/* Filterformular Styling */
+.filter-form {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.filter-form label {
+    font-weight: 500;
+    margin-right: 10px;
+}
+
+.filter-form select {
+    padding: 8px;
+    font-size: 1em;
+    margin-right: 10px;
+}
+
+.filter-form .btn-small {
+    padding: 8px 16px;
+    font-size: 0.9em;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.filter-form .btn-small:hover {
+    background-color: #0056b3;
+}
+

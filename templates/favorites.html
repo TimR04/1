@@ -6,12 +6,44 @@
     <div class="container">
         <h1>Deine Favoriten</h1>
 
+        <!-- Filterfunktion nach Kategorie -->
+        <form method="GET" action="/favorites" class="filter-form">
+            <label for="category">Favoriten nach Kategorie filtern:</label>
+            <select name="category" id="category">
+                <option value="">Alle Kategorien</option>
+                <option value="Biologie">Biologie</option>
+                <option value="Technologie">Technologie</option>
+                <option value="Wirtschaft">Wirtschaft</option>
+                <option value="Mathematik">Mathematik</option>
+                <option value="Physik">Physik</option>
+                <option value="Chemie">Chemie</option>
+                <option value="Medizin">Medizin</option>
+                <option value="Informatik">Informatik</option>
+                <option value="Ingenieurwesen">Ingenieurwesen</option>
+                <option value="Umweltwissenschaften">Umweltwissenschaften</option>
+                <option value="Philosophie">Philosophie</option>
+                <option value="Geschichte">Geschichte</option>
+                <option value="Kunstwissenschaften">Kunstwissenschaften</option>
+                <option value="Musikwissenschaft">Musikwissenschaft</option>
+                <option value="Soziologie">Soziologie</option>
+                <option value="Pädagogik">Pädagogik</option>
+                <option value="Psychologie">Psychologie</option>
+                <option value="Politikwissenschaft">Politikwissenschaft</option>
+                <option value="Rechtswissenschaften">Rechtswissenschaften</option>
+                <option value="Geografie">Geografie</option>
+                <option value="Sportwissenschaften">Sportwissenschaften</option>
+                <option value="Astronomie">Astronomie</option>
+                <option value="Meteorologie">Meteorologie</option>
+                <option value="Ozeanografie">Ozeanografie</option>
+            </select>
+            <button type="submit" class="btn-small">Filtern</button>
+        </form>
+
         {% if favorites %}
             <form method="POST" action="/remove_favorites">
                 <div class="card-container">
                     {% for book in favorites %}
                         <div class="card" id="card-{{ loop.index }}" onclick="toggleCardSelection({{ loop.index }})">
-                            <!-- Checkbox für die Auswahl der Favoriten -->
                             <label>
                                 <input type="checkbox" name="selected_books" value="{{ book.isbn }}" id="checkbox-{{ loop.index }}">
                                 <span>Kachel auswählen</span>
@@ -20,17 +52,17 @@
                             <p><strong>Autor:</strong> {{ book.author }}</p>
                             <p><strong>ISBN:</strong> {{ book.isbn }}</p>
                             <p><strong>Erscheinungsjahr:</strong> {{ book.publication_year }}</p>
+                            <p><strong>Kategorie:</strong> {{ book.category }}</p>  <!-- Kategorie anzeigen -->
 
                             <!-- "Mehr Infos" Button und Beschreibung -->
                             <button type="button" class="btn-small" onclick="toggleDescription({{ loop.index }})">Mehr Infos</button>
                             <div id="description-{{ loop.index }}" class="book-description" style="display: none;">
-                                <p>{{ book.description }}</p>  <!-- Buchbeschreibung anzeigen -->
+                                <p>{{ book.description }}</p>
                             </div>
                         </div>
                     {% endfor %}
                 </div>
 
-                <!-- Button zum Entfernen der ausgewählten Favoriten -->
                 <button type="submit" class="btn-large">Ausgewählte Favoriten entfernen</button>
             </form>
         {% else %}
@@ -41,18 +73,15 @@
 
 <!-- JavaScript Code zur Kachel-Hervorhebung und Beschreibung -->
 <script>
-    // Umschaltet die Anzeige der Buchbeschreibung
     function toggleDescription(index) {
         var description = document.getElementById('description-' + index);
         description.style.display = (description.style.display === 'none') ? 'block' : 'none';
     }
 
-    // Umschaltet die Auswahl einer Kachel und hebt sie visuell hervor
     function toggleCardSelection(index) {
         var card = document.getElementById('card-' + index);
         var checkbox = document.getElementById('checkbox-' + index);
 
-        // Kachel auswählen/abwählen
         if (checkbox.checked) {
             card.classList.remove('selected');
             checkbox.checked = false;
