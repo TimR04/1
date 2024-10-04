@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block title %}Test JSON Data{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <h1>JSON File Contents</h1>
+        
+        <pre>{{ favorites_data | tojson(indent=4) }}</pre>  <!-- Formats and displays the JSON data -->
+    </div>
+{% endblock %}

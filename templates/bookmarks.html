@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+
+{% block title %}Deine Lesezeichen{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h1>Deine Lesezeichen</h1>
+
+    {% if favorites %}
+    <table>
+        <thead>
+            <tr>
+                <th>Buchtitel</th>
+                <th>Autor</th>
+                <th>Letzter Stand</th>
+                <th>Seitenzahl Aktualisieren</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for book in favorites %}
+            <tr>
+                <td>{{ book.title }}</td>
+                <td>{{ book.author }}</td>
+                <td>{{ book.current_page }}</td>
+                <td>
+                    <!-- Jedes Buch bekommt sein eigenes Formular -->
+                    <form method="POST" action="/update_favorite_page">
+                        <input type="number" name="current_page" value="{{ book.current_page }}" min="0" required>
+                        <input type="hidden" name="book_isbn" value="{{ book.isbn }}">
+                        <button type="submit" class="btn-small">Aktualisieren</button>
+                    </form>
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    {% else %}
+    <p>Du hast keine gespeicherten Bücher. Füge ein Buch zu deinen Favoriten hinzu, um deine virtuellen Lesezeichen einzutragen.</p>
+
+    <!-- Button für "Bücher suchen" mit blauer Farbe -->
+    <a href="/search" class="btn btn-primary" style="background-color: #007bff; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px;">Bücher suchen</a>
+    {% endif %}
+</div>
+{% endblock %}

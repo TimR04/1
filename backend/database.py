@@ -8,10 +8,11 @@ def create_tables():
     """
     Diese Funktion erstellt die Tabellen für Benutzer (users) 
     und Favoriten (favorites), falls sie noch nicht existieren.
+    Außerdem wird die Spalte 'category' zu 'favorites' hinzugefügt, falls sie nicht existiert.
     """
     conn = connect_db()
     cur = conn.cursor()
-    
+
     # Erstellen der Tabelle 'users', falls sie nicht existiert
     cur.execute('''
         CREATE TABLE IF NOT EXISTS users (
@@ -20,23 +21,24 @@ def create_tables():
             password TEXT NOT NULL
         )
     ''')
-    
-    # Erstellen der Tabelle 'favorites', falls sie nicht existiert
+
+
     cur.execute('''
-        CREATE TABLE IF NOT EXISTS favorites (
+        CREATE TABLE IF NOT EXISTS reading_progress (
             id INTEGER PRIMARY KEY AUTOINCREMENT,
             user_id INTEGER,
+            book_id INTEGER,
             book_title TEXT,
-            author TEXT,
-            isbn TEXT,
-            publication_year TEXT,
-            FOREIGN KEY(user_id) REFERENCES users(id)
+            date DATE DEFAULT (DATE('now')),
+            pages_read INTEGER NOT NULL,
+            FOREIGN KEY (user_id) REFERENCES users(id),
+            FOREIGN KEY (book_id) REFERENCES books(id)
         )
     ''')
 
-    # Änderungen speichern und Verbindung schließen
     conn.commit()
     conn.close()
+
 
 def register_user(username, password):
     """
@@ -68,51 +70,5 @@ def authenticate_user(username, password):
     
     return user  # Gibt das Tuple zurück oder None, wenn der Benutzer nicht existiert
 
-def save_favorite(user_id, book_details):
-    """
-    Diese Funktion speichert ein Buch als Favorit für den Benutzer.
-    """
-    conn = connect_db()
-    cur = conn.cursor()
-    
-    # Buchinformationen in die Tabelle 'favorites' einfügen
-    cur.execute('''INSERT INTO favorites (user_id, book_title, author, isbn, publication_year)
-                   VALUES (?, ?, ?, ?, ?)''',
-                (user_id, book_details['title'], book_details['author'],
-                 book_details['isbn'], book_details['publication_year']))
-    
-    # Änderungen speichern und Verbindung schließen
-    conn.commit()
-    conn.close()
 
-def get_favorites(user_id):
-    """
-    Diese Funktion ruft die Favoriten eines Benutzers ab und gibt eine Liste von Büchern zurück.
-    """
-    conn = connect_db()
-    cur = conn.cursor()
-    
-    # Favoriten für den Benutzer abrufen
-    cur.execute("SELECT book_title, author, isbn, publication_year FROM favorites WHERE user_id = ?", (user_id,))
-    favorites = cur.fetchall()
-    
-    conn.close()
-    
-    # Favoriten in ein lesbares Format umwandeln
-    return [{'title': row[0], 'author': row[1], 'isbn': row[2], 'publication_year': row[3]} for row in favorites]
 
-def remove_favorites(user_id, selected_isbns):
-    """
-    Entfernt die ausgewählten Favoriten eines Benutzers aus der Datenbank.
-    """
-    conn = connect_db()
-    cur = conn.cursor()
-    
-    # Entferne die Favoriten, deren ISBN in der Liste der ausgewählten ISBNs ist
-    cur.execute('''
-        DELETE FROM favorites 
-        WHERE user_id = ? AND isbn IN ({seq})
-    '''.format(seq=','.join(['?']*len(selected_isbns))), [user_id] + selected_isbns)
-    
-    conn.commit()
-    conn.close()

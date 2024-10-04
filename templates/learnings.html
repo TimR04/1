@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block title %}Deine Learnings{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h1>Deine Learnings</h1>
+
+    {% if favorites %}
+    <table>
+        <thead>
+            <tr>
+                <th>Buchtitel</th>
+                <th>Autor</th>
+                <th>Deine Key Learnings</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for book in favorites %}
+            <tr>
+                <td>{{ book.title }}</td>
+                <td>{{ book.author }}</td>
+                <td>
+                    <form method="POST" action="/learnings">
+                        <input type="hidden" name="book_isbn" value="{{ book.isbn }}">
+                        <textarea name="learning" rows="2" cols="40">{{ book.learning }}</textarea>
+                        <button type="submit">Speichern</button>
+                    </form>
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    {% else %}
+    <p>Du hast keine gespeicherten Bücher. Füge Bücher zu deinen Favoriten hinzu, um deine Key Learnings zu notieren und zu speichern.</p>
+    {% endif %}
+</div>
+{% endblock %}

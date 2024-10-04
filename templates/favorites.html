@@ -11,47 +11,71 @@
             <label for="category">Favoriten nach Kategorie filtern:</label>
             <select name="category" id="category">
                 <option value="">Alle Kategorien</option>
-                <option value="Biologie">Biologie</option>
-                <option value="Technologie">Technologie</option>
-                <option value="Wirtschaft">Wirtschaft</option>
-                <option value="Mathematik">Mathematik</option>
-                <option value="Physik">Physik</option>
-                <option value="Chemie">Chemie</option>
-                <option value="Medizin">Medizin</option>
-                <option value="Informatik">Informatik</option>
-                <!-- Weitere Kategorien -->
+                <option value="Biologie" {% if category_filter == 'Biologie' %}selected{% endif %}>Biologie</option>
+                <option value="Technologie" {% if category_filter == 'Technologie' %}selected{% endif %}>Technologie</option>
+                <option value="Wirtschaft" {% if category_filter == 'Wirtschaft' %}selected{% endif %}>Wirtschaft</option>
+                <option value="Mathematik" {% if category_filter == 'Mathematik' %}selected{% endif %}>Mathematik</option>
+                <option value="Physik" {% if category_filter == 'Physik' %}selected{% endif %}>Physik</option>
+                <option value="Chemie" {% if category_filter == 'Chemie' %}selected{% endif %}>Chemie</option>
+                <option value="Medizin" {% if category_filter == 'Medizin' %}selected{% endif %}>Medizin</option>
+                <option value="Informatik" {% if category_filter == 'Informatik' %}selected{% endif %}>Informatik</option>
+                <option value="Ingenieurwesen" {% if category_filter == 'Ingenieurwesen' %}selected{% endif %}>Ingenieurwesen</option>
+                <option value="Umweltwissenschaften" {% if category_filter == 'Umweltwissenschaften' %}selected{% endif %}>Umweltwissenschaften</option>
+                <option value="Philosophie" {% if category_filter == 'Philosophie' %}selected{% endif %}>Philosophie</option>
+                <option value="Geschichte" {% if category_filter == 'Geschichte' %}selected{% endif %}>Geschichte</option>
+                <option value="Kunstwissenschaften" {% if category_filter == 'Kunstwissenschaften' %}selected{% endif %}>Kunstwissenschaften</option>
+                <option value="Musikwissenschaft" {% if category_filter == 'Musikwissenschaft' %}selected{% endif %}>Musikwissenschaft</option>
+                <option value="Soziologie" {% if category_filter == 'Soziologie' %}selected{% endif %}>Soziologie</option>
+                <option value="Pädagogik" {% if category_filter == 'Pädagogik' %}selected{% endif %}>Pädagogik</option>
+                <option value="Psychologie" {% if category_filter == 'Psychologie' %}selected{% endif %}>Psychologie</option>
+                <option value="Politikwissenschaft" {% if category_filter == 'Politikwissenschaft' %}selected{% endif %}>Politikwissenschaft</option>
+                <option value="Rechtswissenschaften" {% if category_filter == 'Rechtswissenschaften' %}selected{% endif %}>Rechtswissenschaften</option>
+                <option value="Geografie" {% if category_filter == 'Geografie' %}selected{% endif %}>Geografie</option>
+                <option value="Sportwissenschaften" {% if category_filter == 'Sportwissenschaften' %}selected{% endif %}>Sportwissenschaften</option>
+                <option value="Astronomie" {% if category_filter == 'Astronomie' %}selected{% endif %}>Astronomie</option>
+                <option value="Meteorologie" {% if category_filter == 'Meteorologie' %}selected{% endif %}>Meteorologie</option>
+                <option value="Ozeanografie" {% if category_filter == 'Ozeanografie' %}selected{% endif %}>Ozeanografie</option>
             </select>
             <button type="submit" class="btn-small">Filtern</button>
         </form>
 
         {% if favorites %}
+            <!-- Formular zum Entfernen von Favoriten -->
             <form method="POST" action="/remove_favorites">
                 <div class="card-container">
                     {% for book in favorites %}
-                        <div class="card" id="card-{{ loop.index }}" onclick="toggleCardSelection({{ loop.index }})">
-                            <label>
-                                <input type="checkbox" name="selected_books" value="{{ book.isbn }}" id="checkbox-{{ loop.index }}">
-                                <span>Kachel auswählen</span>
-                            </label>
-                            <h2>{{ book.title }}</h2>
-                            <p><strong>Autor:</strong> {{ book.author }}</p>
-                            <p><strong>ISBN:</strong> {{ book.isbn }}</p>
-                            <p><strong>Erscheinungsjahr:</strong> {{ book.publication_year }}</p>
-                            <p><strong>Kategorie:</strong> {{ book.category }}</p>  <!-- Kategorie anzeigen -->
-
-                            <!-- "Mehr Infos" Button und Beschreibung -->
-                            <button type="button" class="btn-small" onclick="toggleDescription({{ loop.index }})">Mehr Infos</button>
-                            <div id="description-{{ loop.index }}" class="book-description" style="display: none;">
-                                <p>{{ book.description }}</p>
-                            </div>
-                        </div>
+                    <div class="card" id="card-{{ loop.index }}">
+                        <label>
+                            <input type="checkbox" name="selected_books" value="{{ book.isbn }}" id="checkbox-{{ loop.index }}">
+                            <span>Kachel auswählen</span>
+                        </label>
+                        <h2>{{ book.title }}</h2>
+                        <p><strong>Autor:</strong> {{ book.author }}</p>
+                        <p><strong>ISBN:</strong> {{ book.isbn }}</p>
+                        <p><strong>Erscheinungsjahr:</strong> {{ book.publication_year }}</p>
+                        <p><strong>Kategorie:</strong> {{ book.category }}</p>
+                    </div>
                     {% endfor %}
                 </div>
-
                 <button type="submit" class="btn-large">Ausgewählte Favoriten entfernen</button>
             </form>
         {% else %}
-            <p>Du hast noch keine Favoriten gespeichert.</p>
+            <!-- Nachricht und "Bücher suchen"-Button, wenn keine Favoriten vorhanden sind -->
+            <p>Du hast noch keine Favoriten gespeichert oder keine Favoriten in dieser Kategorie.</p>
+
+            <!-- Button für "Bücher suchen" mit blauer Farbe -->
+            <a href="/search" class="btn btn-primary" style="background-color: #007bff; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px;">Bücher suchen</a>
         {% endif %}
     </div>
+
+    <script>
+        function toggleDescription(index) {
+            var description = document.getElementById('description-' + index);
+            if (description.style.display === 'none') {
+                description.style.display = 'block';
+            } else {
+                description.style.display = 'none';
+            }
+        }
+    </script>
 {% endblock %}
