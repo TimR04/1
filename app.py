@@ -13,13 +13,15 @@ License: Free
 
 import os
 from flask import Flask, render_template, request, redirect, session, url_for
+from flask.cli import load_dotenv
 from backend import database, google_books_api, json_storage
 import logging
 import bcrypt
 
+load_dotenv()
+
 app = Flask(__name__)
-app.secret_key = os.environ.get('SECRET_KEY', 'super_secret_key')
-"set SECRET_KEY=dein_geheimer_schluessel"
+app.secret_key = os.getenv('SECRET_KEY')
 
 # Set up logging configuration
 logging.basicConfig(filename='application.log', 

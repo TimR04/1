@@ -1,0 +1,1 @@
+SECRET_KEY=dein_geheimer_schlüssel
