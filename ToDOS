@@ -1,0 +1,17 @@
+Todos: 
+
+app. py ( logfile implementieren und Funktionsbezeichnungen überprüfen), secreet key =use randamizer
+
+
+Passwortverschlüsselung
+intialize_db fehlt noch logfile und beschreibung 
+html und css beschreibungen ggf. logfile
+
+Evtl. nochmal die Funktionsbezeichnungen überprüfen und 
+optimieren (sollten nicht irreführend sein)
+
+readme einfügen 
+
+requirement einfügen
+
+UUID for session management 

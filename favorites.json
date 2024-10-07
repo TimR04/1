@@ -1,13 +1,36 @@
 {
     "7": [
         {
+            "title": "Handel und Wettbewerb auf globalen M\u00e4rkten",
+            "author": "Karl Morasch, Florian Bartholomae",
+            "isbn": "9783658160449",
+            "publication_year": "2017-05-31",
+            "category": "Wirtschaft"
+        }
+    ],
+    "6": [
+        {
             "title": "Ergebnisse Der Biologie",
             "author": "H. Autrum, E. B\u00fcnning, K. v. Frisch, E. Hadorn, A. K\u00fchn, E. Mayr, A. Pirson, J. Straub, H. Stubbe, W. Weidel, Hansjochem Autrum",
             "isbn": "9783642948053",
             "publication_year": "2013-03-13",
             "category": "Biologie",
-            "learning": "ggh",
-            "current_page": 55
+            "current_page": 100,
+            "learning": "GGsgsg"
+        },
+        {
+            "title": "Wirtschaft(lich) studieren",
+            "author": "Lukas B\u00e4uerle, Stephan P\u00fchringer, Walter Otto \u00d6tsch",
+            "isbn": "9783658300579",
+            "publication_year": "2020-06-18",
+            "category": "Wirtschaft"
+        },
+        {
+            "title": "Geht klar! Verdauung",
+            "author": "Romina Posch, Sandra Nitz",
+            "isbn": "361722007X",
+            "publication_year": "2019",
+            "category": "Biologie"
         }
     ]
 }
