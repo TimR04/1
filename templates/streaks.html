@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block title %}Reading Streak{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h1>Reading Streak</h1>
+    <p>Welcome, User {{ user_id }}!</p>
+    <p>Your current reading streak: {{ current_streak }} days</p>
+    <p>Your longest reading streak: {{ longest_streak }} days</p>
+    <p>Last read date: {{ last_read_date }}</p>
+</div>
+{% endblock %}

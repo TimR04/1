@@ -36,13 +36,26 @@ with app.app_context():
 @app.route('/')
 def index():
     """
-    Displays the homepage.
+    Displays the homepage with streak information if the user is logged in.
     
     Returns:
         Rendered homepage (index.html).
     """
-    logging.info("Homepage accessed.")
-    return render_template('index.html')
+    user_id = session.get('user_id')
+
+    # Initialize streak data as empty
+    streak_data = None
+
+    # If the user is logged in, get the streak data
+    if user_id:
+        streak_data = database.get_user_streak_data(user_id)
+        logging.info(f"Displayed streak data for user {user_id}.")
+    else:
+        logging.info("Homepage accessed without login.")
+
+    return render_template('index.html', streak_data=streak_data)
+
+
 
 
 @app.route('/register', methods=['GET', 'POST'])
@@ -68,10 +81,10 @@ def login():
         
         user = database.authenticate_user(username, password)
         if user:
-            session['user_id'] = user[0]  # Benutzer-ID speichern
-            return redirect('/search')
+            session['user_id'] = user[0]  # Store user ID in session
+            return redirect('/')
         else:
-            return 'Login fehlgeschlagen. Bitte überprüfe deinen Benutzernamen und dein Passwort.'
+            return 'Login failed. Please check your username and password.'
     
     return render_template('login.html')
 
@@ -79,28 +92,21 @@ def login():
 
 
 
-def hash_password(password):
-    """Hash das Passwort."""
-    salt = bcrypt.gensalt()
-    hashed = bcrypt.hashpw(password.encode('utf-8'), salt)
-    return hashed
-
-def check_password(plain_password, hashed_password):
-    """Überprüft, ob das Passwort korrekt ist."""
-    return bcrypt.checkpw(plain_password.encode('utf-8'), hashed_password)
+@app.route('/streaks')
+def streaks():
+    if 'user_id' not in session:
+        logging.warning("User attempted to access streaks page without logging in.")
+        return "Log in to track your reading streaks."
+    
+    # Rest of your code to display streaks
+    return render_template('streaks.html', user_id=session['user_id'])
 
 
 
 @app.route('/logout')
 def logout():
-    """
-    Logs out the user by clearing the session.
-    
-    Returns:
-        Redirects to the homepage.
-    """
-    user_id = session.pop('user_id', None)
-    logging.info(f"User with ID '{user_id}' logged out.")
+    session.pop('user_id', None)
+    logging.info("User logged out.")
     return redirect('/')
 
 
@@ -259,13 +265,7 @@ def bookmark():
 @app.route('/update_favorite_page', methods=['POST'])
 def update_favorite_page():
     """
-    Updates the current page for a favorite book.
-    
-    POST:
-        Updates the current page number for a book in the user's favorites.
-
-    Returns:
-        Redirects to the bookmarks page with the updated page number.
+    Updates the current page for a favorite book and the user's reading streak.
     """
     user_id = session.get('user_id')
     if not user_id:
@@ -285,6 +285,9 @@ def update_favorite_page():
     # Update the current page in the JSON file
     json_storage.update_favorite_page(user_id, book_isbn, current_page)
     logging.info(f"Updated page to {current_page} for book with ISBN {book_isbn} for user {user_id}.")
+
+    # Update the user's reading streak
+    database.update_reading_streak(user_id, current_page)
 
     # Reload the page with the updated data
     favorites = json_storage.load_user_favorites(user_id)
@@ -318,6 +321,20 @@ def learnings():
 
     favorites = json_storage.load_user_favorites(user_id)
     return render_template('learnings.html', favorites=favorites)
+
+@app.route('/update_reading_progress', methods=['POST'])
+def update_reading_progress():
+    """
+    Updates the user's reading progress and their streak.
+    """
+    user_id = session.get('user_id')
+    if user_id:
+        current_page = request.form.get('current_page')
+        # Update the reading streak based on the progress
+        streak_data = database.update_reading_streak(user_id)
+        return redirect('/')
+    else:
+        return redirect('/login')
 
 
 if __name__ == '__main__':

@@ -1,14 +1,30 @@
 {% extends "base.html" %}
 
-{% block title %}Startseite{% endblock %}
+{% block title %}Willkommen in Ihrer virtuellen Lernbibliothek{% endblock %}
 
 {% block content %}
-    <div class="container home-container">
-        <h1>Willkommen zur Büchersuche</h1>
-        <p>Wähle eine der folgenden Optionen:</p>
-        <div class="home-buttons">
-            <a href="/search" class="btn-large">Suchanfrage stellen</a>
-            <a href="/favorites" class="btn-large">Favoriten anzeigen</a>
-        </div>
+    <div class="container">
+        <h1>Willkommen in Ihrer virtuellen Lernbibliothek</h1>
+        
+        {% if session.user_id %}
+            <p>Entdecken Sie neue Bücher mit der lehrreichen Suchfunktion, verfolgen Sie Ihren Lesefortschritt und lassen Sie sich Ihre persönlichen Lese-Statistiken anzeigen. Notieren Sie wertvolle Erkenntnisse zu Ihren Lieblingsbüchern und setzen Sie virtuelle Lesezeichen, um jederzeit nahtlos weiterlesen zu können.</p>
+            
+            {% if streak_data %}
+                <div class="streak-info">
+                    <h2>Ihre Lese-Stats</h2>
+                    <p>Aktuelle Streak: {{ streak_data.current_streak }} Tage</p>
+                    <p>Längste Streak: {{ streak_data.longest_streak }} Tage</p>
+                    <p>Letztes Lesen: {{ streak_data.last_read_date }}</p>
+                </div>
+            {% else %}
+                <p>Ihre Lese-Streaks werden noch erfasst.</p>
+            {% endif %}
+        {% else %}
+            <p>Loggen Sie sich ein, um die Büchersuche zu nutzen, Ihre Lese-Streak zu sehen, Ihre Learnings zu notieren und Ihre virtuellen Lesezeichen zu setzen.</p>
+            <div class="auth-buttons">
+                <a href="{{ url_for('login') }}" class="btn btn-primary" style="background-color: #007bff; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px;">Login</a>
+                <a href="{{ url_for('register') }}" class="btn btn-primary" style="background-color: #007bff; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; margin-left: 10px;">Registrieren</a>
+            </div>
+        {% endif %}
     </div>
 {% endblock %}

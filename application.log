@@ -1138,3 +1138,672 @@
 2024-10-07 17:44:59,990 - INFO - Table 'users' created or already exists.
 2024-10-07 17:45:00,060 - WARNING -  * Debugger is active!
 2024-10-07 17:45:00,067 - INFO -  * Debugger PIN: 710-992-536
+2024-10-07 17:45:05,139 - INFO - Loaded favorites from favorites.json.
+2024-10-07 17:45:05,139 - INFO - Displayed bookmarks for user 11.
+2024-10-07 17:45:05,148 - INFO - 127.0.0.1 - - [07/Oct/2024 17:45:05] "GET /bookmark HTTP/1.1" 200 -
+2024-10-07 17:45:05,198 - INFO - 127.0.0.1 - - [07/Oct/2024 17:45:05] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2024-10-07 18:35:05,810 - INFO - Database connection established successfully.
+2024-10-07 18:35:05,819 - INFO - Table 'users' created or already exists.
+2024-10-07 18:35:18,470 - INFO - Database connection established successfully.
+2024-10-07 18:35:18,471 - INFO - Table 'users' created or already exists.
+2024-10-07 18:35:18,544 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-10-07 18:35:18,544 - INFO - [33mPress CTRL+C to quit[0m
+2024-10-07 18:35:18,548 - INFO -  * Restarting with stat
+2024-10-07 18:35:19,888 - INFO - Database connection established successfully.
+2024-10-07 18:35:19,889 - INFO - Table 'users' created or already exists.
+2024-10-07 18:35:19,926 - WARNING -  * Debugger is active!
+2024-10-07 18:35:19,933 - INFO -  * Debugger PIN: 710-992-536
+2024-10-07 18:35:34,483 - INFO - Loaded favorites from favorites.json.
+2024-10-07 18:35:34,484 - INFO - Loaded 0 favorites for user 11.
+2024-10-07 18:35:34,548 - INFO - 127.0.0.1 - - [07/Oct/2024 18:35:34] "GET /learnings HTTP/1.1" 200 -
+2024-10-07 18:35:34,656 - INFO - 127.0.0.1 - - [07/Oct/2024 18:35:34] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2024-10-07 18:35:37,474 - INFO - Loaded favorites from favorites.json.
+2024-10-07 18:35:37,475 - INFO - Displayed bookmarks for user 11.
+2024-10-07 18:35:37,502 - INFO - 127.0.0.1 - - [07/Oct/2024 18:35:37] "GET /bookmark HTTP/1.1" 200 -
+2024-10-07 18:35:37,534 - INFO - 127.0.0.1 - - [07/Oct/2024 18:35:37] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2024-10-07 18:35:38,491 - INFO - Loaded favorites from favorites.json.
+2024-10-07 18:35:38,491 - INFO - Favorites displayed for user 11 with category filter 'None'.
+2024-10-07 18:35:38,540 - INFO - 127.0.0.1 - - [07/Oct/2024 18:35:38] "GET /favorites HTTP/1.1" 200 -
+2024-10-07 18:35:38,572 - INFO - 127.0.0.1 - - [07/Oct/2024 18:35:38] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2024-10-07 18:35:39,582 - INFO - 127.0.0.1 - - [07/Oct/2024 18:35:39] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2024-10-07 18:35:39,642 - INFO - 127.0.0.1 - - [07/Oct/2024 18:35:39] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2024-10-07 18:35:39,654 - INFO - 127.0.0.1 - - [07/Oct/2024 18:35:39] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2024-10-07 18:35:39,698 - INFO - 127.0.0.1 - - [07/Oct/2024 18:35:39] "GET /?__debugger__=yes&cmd=resource&f=console.png&s=uOhgysCFhnl1wkyn1aFp HTTP/1.1" 200 -
+2024-10-07 18:35:39,728 - INFO - 127.0.0.1 - - [07/Oct/2024 18:35:39] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2024-10-07 18:35:55,296 - INFO - 127.0.0.1 - - [07/Oct/2024 18:35:55] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2024-10-07 18:35:55,336 - INFO - 127.0.0.1 - - [07/Oct/2024 18:35:55] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-10-07 18:35:55,346 - INFO - 127.0.0.1 - - [07/Oct/2024 18:35:55] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-10-07 18:35:55,407 - INFO - 127.0.0.1 - - [07/Oct/2024 18:35:55] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png&s=uOhgysCFhnl1wkyn1aFp HTTP/1.1[0m" 304 -
+2024-10-07 18:35:55,436 - INFO - 127.0.0.1 - - [07/Oct/2024 18:35:55] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-10-07 18:37:17,847 - INFO -  * Detected change in 'c:\\Users\\CL921RQ\\.vscode\\self_learning\\1\\backend\\database.py', reloading
+2024-10-07 18:37:17,916 - INFO -  * Restarting with stat
+2024-10-07 18:37:19,269 - INFO - Database connection established successfully.
+2024-10-07 18:37:19,269 - INFO - Table 'users' created or already exists.
+2024-10-07 18:37:19,306 - WARNING -  * Debugger is active!
+2024-10-07 18:37:19,311 - INFO -  * Debugger PIN: 710-992-536
+2024-10-07 18:37:23,314 - INFO - 127.0.0.1 - - [07/Oct/2024 18:37:23] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2024-10-07 18:37:23,431 - INFO - 127.0.0.1 - - [07/Oct/2024 18:37:23] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-10-07 18:37:23,432 - INFO - 127.0.0.1 - - [07/Oct/2024 18:37:23] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-10-07 18:37:23,452 - INFO - 127.0.0.1 - - [07/Oct/2024 18:37:23] "GET /?__debugger__=yes&cmd=resource&f=console.png&s=SLC7pNdodiR9bL0kBmok HTTP/1.1" 200 -
+2024-10-07 18:37:23,471 - INFO - 127.0.0.1 - - [07/Oct/2024 18:37:23] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-10-07 18:37:24,369 - INFO - 127.0.0.1 - - [07/Oct/2024 18:37:24] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2024-10-07 18:37:24,407 - INFO - 127.0.0.1 - - [07/Oct/2024 18:37:24] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-10-07 18:37:24,411 - INFO - 127.0.0.1 - - [07/Oct/2024 18:37:24] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-10-07 18:37:24,426 - INFO - 127.0.0.1 - - [07/Oct/2024 18:37:24] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png&s=SLC7pNdodiR9bL0kBmok HTTP/1.1[0m" 304 -
+2024-10-07 18:37:24,451 - INFO - 127.0.0.1 - - [07/Oct/2024 18:37:24] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-10-07 18:39:04,931 - INFO -  * Detected change in 'c:\\Users\\CL921RQ\\.vscode\\self_learning\\1\\app.py', reloading
+2024-10-07 18:39:04,987 - INFO -  * Restarting with stat
+2024-10-07 18:39:06,352 - INFO - Database connection established successfully.
+2024-10-07 18:39:06,353 - INFO - Table 'users' created or already exists.
+2024-10-07 18:39:06,387 - WARNING -  * Debugger is active!
+2024-10-07 18:39:06,393 - INFO -  * Debugger PIN: 710-992-536
+2024-10-07 18:39:15,409 - INFO - 127.0.0.1 - - [07/Oct/2024 18:39:15] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2024-10-07 18:39:15,546 - INFO - 127.0.0.1 - - [07/Oct/2024 18:39:15] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-10-07 18:39:15,546 - INFO - 127.0.0.1 - - [07/Oct/2024 18:39:15] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-10-07 18:39:15,565 - INFO - 127.0.0.1 - - [07/Oct/2024 18:39:15] "GET /?__debugger__=yes&cmd=resource&f=console.png&s=54cHfA6jFslSvAzKQpxO HTTP/1.1" 200 -
+2024-10-07 18:39:15,586 - INFO - 127.0.0.1 - - [07/Oct/2024 18:39:15] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-10-07 18:39:16,525 - INFO - 127.0.0.1 - - [07/Oct/2024 18:39:16] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2024-10-07 18:39:16,561 - INFO - 127.0.0.1 - - [07/Oct/2024 18:39:16] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-10-07 18:39:16,566 - INFO - 127.0.0.1 - - [07/Oct/2024 18:39:16] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-10-07 18:39:16,583 - INFO - 127.0.0.1 - - [07/Oct/2024 18:39:16] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png&s=54cHfA6jFslSvAzKQpxO HTTP/1.1[0m" 304 -
+2024-10-07 18:39:16,604 - INFO - 127.0.0.1 - - [07/Oct/2024 18:39:16] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-10-07 18:39:44,708 - INFO -  * Detected change in 'c:\\Users\\CL921RQ\\.vscode\\self_learning\\1\\app.py', reloading
+2024-10-07 18:39:44,780 - INFO -  * Restarting with stat
+2024-10-07 18:39:46,265 - INFO - Database connection established successfully.
+2024-10-07 18:39:46,266 - INFO - Table 'users' created or already exists.
+2024-10-07 18:39:46,305 - WARNING -  * Debugger is active!
+2024-10-07 18:39:46,311 - INFO -  * Debugger PIN: 710-992-536
+2024-10-07 18:39:46,353 - INFO - Database connection established successfully.
+2024-10-07 18:39:46,353 - INFO - Homepage accessed.
+2024-10-07 18:39:46,368 - INFO - 127.0.0.1 - - [07/Oct/2024 18:39:46] "GET / HTTP/1.1" 200 -
+2024-10-07 18:39:49,024 - INFO - Database connection established successfully.
+2024-10-07 18:39:49,024 - INFO - Homepage accessed.
+2024-10-07 18:39:49,025 - INFO - 127.0.0.1 - - [07/Oct/2024 18:39:49] "GET / HTTP/1.1" 200 -
+2024-10-07 18:40:01,376 - INFO - Loaded favorites from favorites.json.
+2024-10-07 18:40:01,377 - INFO - Favorites displayed for user 11 with category filter 'None'.
+2024-10-07 18:40:01,396 - INFO - 127.0.0.1 - - [07/Oct/2024 18:40:01] "GET /favorites HTTP/1.1" 200 -
+2024-10-07 18:40:01,494 - INFO - 127.0.0.1 - - [07/Oct/2024 18:40:01] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2024-10-07 18:40:04,312 - INFO - Database connection established successfully.
+2024-10-07 18:40:04,312 - INFO - Homepage accessed.
+2024-10-07 18:40:04,313 - INFO - 127.0.0.1 - - [07/Oct/2024 18:40:04] "GET / HTTP/1.1" 200 -
+2024-10-07 18:40:50,377 - INFO - Database connection established successfully.
+2024-10-07 18:40:50,377 - INFO - Homepage accessed.
+2024-10-07 18:40:50,377 - INFO - 127.0.0.1 - - [07/Oct/2024 18:40:50] "GET / HTTP/1.1" 200 -
+2024-10-07 18:41:51,545 - INFO -  * Detected change in 'c:\\Users\\CL921RQ\\.vscode\\self_learning\\1\\app.py', reloading
+2024-10-07 18:41:51,612 - INFO -  * Restarting with stat
+2024-10-07 18:41:53,097 - INFO - Database connection established successfully.
+2024-10-07 18:41:53,097 - INFO - Table 'users' created or already exists.
+2024-10-07 18:41:53,142 - WARNING -  * Debugger is active!
+2024-10-07 18:41:53,149 - INFO -  * Debugger PIN: 710-992-536
+2024-10-07 18:41:57,384 - INFO -  * Detected change in 'c:\\Users\\CL921RQ\\.vscode\\self_learning\\1\\app.py', reloading
+2024-10-07 18:41:57,461 - INFO -  * Restarting with stat
+2024-10-07 18:41:58,849 - INFO - Database connection established successfully.
+2024-10-07 18:41:58,850 - INFO - Table 'users' created or already exists.
+2024-10-07 18:41:58,889 - WARNING -  * Debugger is active!
+2024-10-07 18:41:58,894 - INFO -  * Debugger PIN: 710-992-536
+2024-10-07 18:42:21,504 - INFO - Database connection established successfully.
+2024-10-07 18:42:21,505 - INFO - Homepage accessed.
+2024-10-07 18:42:21,514 - INFO - 127.0.0.1 - - [07/Oct/2024 18:42:21] "GET / HTTP/1.1" 200 -
+2024-10-07 18:42:22,340 - INFO - Database connection established successfully.
+2024-10-07 18:42:22,340 - INFO - Homepage accessed.
+2024-10-07 18:42:22,341 - INFO - 127.0.0.1 - - [07/Oct/2024 18:42:22] "GET / HTTP/1.1" 200 -
+2024-10-07 18:42:25,021 - INFO - Database connection established successfully.
+2024-10-07 18:42:25,022 - INFO - Homepage accessed.
+2024-10-07 18:42:25,022 - INFO - 127.0.0.1 - - [07/Oct/2024 18:42:25] "GET / HTTP/1.1" 200 -
+2024-10-07 18:42:28,731 - INFO - 127.0.0.1 - - [07/Oct/2024 18:42:28] "GET /search HTTP/1.1" 200 -
+2024-10-07 18:42:28,823 - INFO - 127.0.0.1 - - [07/Oct/2024 18:42:28] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2024-10-07 18:42:30,807 - INFO - Search query for 'Biologie ' returned 10 results.
+2024-10-07 18:42:30,807 - INFO - Successfully retrieved 10 books for query 'Biologie '.
+2024-10-07 18:42:30,807 - INFO - Search query 'Biologie' with topic '' returned 10 results.
+2024-10-07 18:42:30,833 - INFO - 127.0.0.1 - - [07/Oct/2024 18:42:30] "POST /search HTTP/1.1" 200 -
+2024-10-07 18:42:30,882 - INFO - 127.0.0.1 - - [07/Oct/2024 18:42:30] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2024-10-07 18:42:36,089 - INFO - Loaded favorites from favorites.json.
+2024-10-07 18:42:36,091 - INFO - Book Ergebnisse Der Biologie added to favorites for user 11.
+2024-10-07 18:42:36,092 - INFO - Added favorite book 'Ergebnisse Der Biologie' for user 11.
+2024-10-07 18:42:36,092 - INFO - 127.0.0.1 - - [07/Oct/2024 18:42:36] "[32mPOST /add_favorite HTTP/1.1[0m" 302 -
+2024-10-07 18:42:36,119 - INFO - Loaded favorites from favorites.json.
+2024-10-07 18:42:36,120 - INFO - Favorites displayed for user 11 with category filter 'None'.
+2024-10-07 18:42:36,135 - INFO - 127.0.0.1 - - [07/Oct/2024 18:42:36] "GET /favorites HTTP/1.1" 200 -
+2024-10-07 18:42:36,172 - INFO - 127.0.0.1 - - [07/Oct/2024 18:42:36] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2024-10-07 18:42:37,888 - INFO - Loaded favorites from favorites.json.
+2024-10-07 18:42:37,889 - INFO - Displayed bookmarks for user 11.
+2024-10-07 18:42:37,898 - INFO - 127.0.0.1 - - [07/Oct/2024 18:42:37] "GET /bookmark HTTP/1.1" 200 -
+2024-10-07 18:42:37,931 - INFO - 127.0.0.1 - - [07/Oct/2024 18:42:37] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2024-10-07 18:42:43,341 - INFO - Loaded favorites from favorites.json.
+2024-10-07 18:42:43,342 - INFO - Updated current page to 2 for book Ergebnisse Der Biologie (ISBN: 9783642948053) for user 11.
+2024-10-07 18:42:43,344 - INFO - Updated page to 2 for book with ISBN 9783642948053 for user 11.
+2024-10-07 18:42:43,344 - INFO - Database connection established successfully.
+2024-10-07 18:42:43,361 - INFO - 127.0.0.1 - - [07/Oct/2024 18:42:43] "[35m[1mPOST /update_favorite_page HTTP/1.1[0m" 500 -
+2024-10-07 18:42:43,411 - INFO - 127.0.0.1 - - [07/Oct/2024 18:42:43] "GET /update_favorite_page?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2024-10-07 18:42:43,417 - INFO - 127.0.0.1 - - [07/Oct/2024 18:42:43] "GET /update_favorite_page?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2024-10-07 18:42:43,456 - INFO - 127.0.0.1 - - [07/Oct/2024 18:42:43] "GET /update_favorite_page?__debugger__=yes&cmd=resource&f=console.png&s=pHOzuXzuMg5fJbMQWa3O HTTP/1.1" 200 -
+2024-10-07 18:42:43,486 - INFO - 127.0.0.1 - - [07/Oct/2024 18:42:43] "GET /update_favorite_page?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2024-10-07 18:43:31,010 - INFO -  * Detected change in 'c:\\Users\\CL921RQ\\.vscode\\self_learning\\1\\app.py', reloading
+2024-10-07 18:43:31,076 - INFO -  * Restarting with stat
+2024-10-07 18:43:32,462 - INFO - Database connection established successfully.
+2024-10-07 18:43:32,462 - INFO - Table 'users' created or already exists.
+2024-10-07 18:43:32,503 - WARNING -  * Debugger is active!
+2024-10-07 18:43:32,509 - INFO -  * Debugger PIN: 710-992-536
+2024-10-07 18:43:48,160 - INFO -  * Detected change in 'c:\\Users\\CL921RQ\\.vscode\\self_learning\\1\\app.py', reloading
+2024-10-07 18:43:48,218 - INFO -  * Restarting with stat
+2024-10-07 18:43:49,621 - INFO - Database connection established successfully.
+2024-10-07 18:43:49,621 - INFO - Table 'users' created or already exists.
+2024-10-07 18:43:49,657 - WARNING -  * Debugger is active!
+2024-10-07 18:43:49,662 - INFO -  * Debugger PIN: 710-992-536
+2024-10-07 18:44:31,164 - INFO -  * Detected change in 'c:\\Users\\CL921RQ\\.vscode\\self_learning\\1\\app.py', reloading
+2024-10-07 18:44:31,234 - INFO -  * Restarting with stat
+2024-10-07 18:44:32,610 - INFO - Database connection established successfully.
+2024-10-07 18:44:32,611 - INFO - Table 'users' created or already exists.
+2024-10-07 18:44:32,647 - WARNING -  * Debugger is active!
+2024-10-07 18:44:32,652 - INFO -  * Debugger PIN: 710-992-536
+2024-10-07 18:46:30,512 - INFO -  * Detected change in 'c:\\Users\\CL921RQ\\.vscode\\self_learning\\1\\backend\\database.py', reloading
+2024-10-07 18:46:30,561 - INFO -  * Restarting with stat
+2024-10-07 18:46:31,959 - INFO - Database connection established successfully.
+2024-10-07 18:46:31,959 - INFO - Table 'users' created or already exists.
+2024-10-07 18:46:31,993 - WARNING -  * Debugger is active!
+2024-10-07 18:46:31,998 - INFO -  * Debugger PIN: 710-992-536
+2024-10-07 18:46:41,372 - INFO - 127.0.0.1 - - [07/Oct/2024 18:46:41] "[31m[1mGET /update_favorite_page HTTP/1.1[0m" 405 -
+2024-10-07 18:46:45,654 - INFO - Database connection established successfully.
+2024-10-07 18:46:45,655 - INFO - Homepage accessed.
+2024-10-07 18:46:45,674 - INFO - 127.0.0.1 - - [07/Oct/2024 18:46:45] "GET / HTTP/1.1" 200 -
+2024-10-07 18:46:51,853 - INFO - Loaded favorites from favorites.json.
+2024-10-07 18:46:51,854 - INFO - Favorites displayed for user 11 with category filter 'None'.
+2024-10-07 18:46:51,936 - INFO - 127.0.0.1 - - [07/Oct/2024 18:46:51] "GET /favorites HTTP/1.1" 200 -
+2024-10-07 18:46:52,039 - INFO - 127.0.0.1 - - [07/Oct/2024 18:46:52] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2024-10-07 18:46:54,528 - INFO - Loaded favorites from favorites.json.
+2024-10-07 18:46:54,528 - INFO - Loaded 1 favorites for user 11.
+2024-10-07 18:46:54,561 - INFO - 127.0.0.1 - - [07/Oct/2024 18:46:54] "GET /learnings HTTP/1.1" 200 -
+2024-10-07 18:46:54,597 - INFO - 127.0.0.1 - - [07/Oct/2024 18:46:54] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2024-10-07 18:46:57,614 - INFO - Database connection established successfully.
+2024-10-07 18:46:57,614 - INFO - Homepage accessed.
+2024-10-07 18:46:57,615 - INFO - 127.0.0.1 - - [07/Oct/2024 18:46:57] "GET / HTTP/1.1" 200 -
+2024-10-07 18:49:59,356 - INFO - Database connection established successfully.
+2024-10-07 18:49:59,357 - INFO - Table 'users' created or already exists.
+2024-10-07 18:49:59,413 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-10-07 18:49:59,413 - INFO - [33mPress CTRL+C to quit[0m
+2024-10-07 18:49:59,415 - INFO -  * Restarting with stat
+2024-10-07 18:50:00,758 - INFO - Database connection established successfully.
+2024-10-07 18:50:00,759 - INFO - Table 'users' created or already exists.
+2024-10-07 18:50:00,800 - WARNING -  * Debugger is active!
+2024-10-07 18:50:00,805 - INFO -  * Debugger PIN: 710-992-536
+2024-10-07 18:50:12,950 - INFO - Database connection established successfully.
+2024-10-07 18:50:12,950 - INFO - Homepage accessed.
+2024-10-07 18:50:12,964 - INFO - 127.0.0.1 - - [07/Oct/2024 18:50:12] "GET / HTTP/1.1" 200 -
+2024-10-07 18:50:17,559 - INFO - Loaded favorites from favorites.json.
+2024-10-07 18:50:17,560 - INFO - Favorites displayed for user 11 with category filter 'None'.
+2024-10-07 18:50:17,578 - INFO - 127.0.0.1 - - [07/Oct/2024 18:50:17] "GET /favorites HTTP/1.1" 200 -
+2024-10-07 18:50:17,663 - INFO - 127.0.0.1 - - [07/Oct/2024 18:50:17] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2024-10-07 18:50:19,416 - INFO - User logged out.
+2024-10-07 18:50:19,417 - INFO - 127.0.0.1 - - [07/Oct/2024 18:50:19] "[32mGET /logout HTTP/1.1[0m" 302 -
+2024-10-07 18:50:19,427 - INFO - Database connection established successfully.
+2024-10-07 18:50:19,427 - INFO - Homepage accessed.
+2024-10-07 18:50:19,428 - INFO - 127.0.0.1 - - [07/Oct/2024 18:50:19] "GET / HTTP/1.1" 200 -
+2024-10-07 18:50:27,489 - INFO - 127.0.0.1 - - [07/Oct/2024 18:50:27] "GET /register HTTP/1.1" 200 -
+2024-10-07 18:50:27,524 - INFO - 127.0.0.1 - - [07/Oct/2024 18:50:27] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2024-10-07 18:50:30,208 - INFO - Database connection established successfully.
+2024-10-07 18:50:30,214 - INFO - User 'Andrea Berg' successfully registered.
+2024-10-07 18:50:30,215 - INFO - 127.0.0.1 - - [07/Oct/2024 18:50:30] "[32mPOST /register HTTP/1.1[0m" 302 -
+2024-10-07 18:50:30,238 - INFO - 127.0.0.1 - - [07/Oct/2024 18:50:30] "GET /login HTTP/1.1" 200 -
+2024-10-07 18:50:30,275 - INFO - 127.0.0.1 - - [07/Oct/2024 18:50:30] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2024-10-07 18:50:33,794 - INFO - Database connection established successfully.
+2024-10-07 18:50:34,133 - INFO - User 'Andrea Berg' successfully authenticated.
+2024-10-07 18:50:34,133 - INFO - User 'Andrea Berg' logged in successfully.
+2024-10-07 18:50:34,134 - INFO - 127.0.0.1 - - [07/Oct/2024 18:50:34] "[32mPOST /login HTTP/1.1[0m" 302 -
+2024-10-07 18:50:34,232 - INFO - 127.0.0.1 - - [07/Oct/2024 18:50:34] "[35m[1mGET /streaks HTTP/1.1[0m" 500 -
+2024-10-07 18:50:34,314 - INFO - 127.0.0.1 - - [07/Oct/2024 18:50:34] "GET /streaks?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2024-10-07 18:50:34,326 - INFO - 127.0.0.1 - - [07/Oct/2024 18:50:34] "GET /streaks?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2024-10-07 18:50:34,375 - INFO - 127.0.0.1 - - [07/Oct/2024 18:50:34] "GET /streaks?__debugger__=yes&cmd=resource&f=console.png&s=PkncibNuRLvn206UfaWq HTTP/1.1" 200 -
+2024-10-07 18:50:34,415 - INFO - 127.0.0.1 - - [07/Oct/2024 18:50:34] "GET /streaks?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2024-10-07 18:52:53,500 - INFO - 127.0.0.1 - - [07/Oct/2024 18:52:53] "GET /streaks HTTP/1.1" 200 -
+2024-10-07 18:52:53,536 - INFO - 127.0.0.1 - - [07/Oct/2024 18:52:53] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2024-10-07 18:53:03,481 - INFO - Loaded favorites from favorites.json.
+2024-10-07 18:53:03,481 - INFO - Displayed bookmarks for user 1.
+2024-10-07 18:53:03,514 - INFO - 127.0.0.1 - - [07/Oct/2024 18:53:03] "GET /bookmark HTTP/1.1" 200 -
+2024-10-07 18:53:03,547 - INFO - 127.0.0.1 - - [07/Oct/2024 18:53:03] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2024-10-07 18:53:04,431 - INFO - Loaded favorites from favorites.json.
+2024-10-07 18:53:04,432 - INFO - Favorites displayed for user 1 with category filter 'None'.
+2024-10-07 18:53:04,433 - INFO - 127.0.0.1 - - [07/Oct/2024 18:53:04] "GET /favorites HTTP/1.1" 200 -
+2024-10-07 18:53:04,471 - INFO - 127.0.0.1 - - [07/Oct/2024 18:53:04] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2024-10-07 18:53:05,465 - INFO - Database connection established successfully.
+2024-10-07 18:53:05,465 - INFO - Homepage accessed.
+2024-10-07 18:53:05,466 - INFO - 127.0.0.1 - - [07/Oct/2024 18:53:05] "GET / HTTP/1.1" 200 -
+2024-10-07 18:58:23,927 - INFO - Database connection established successfully.
+2024-10-07 18:58:23,927 - INFO - Homepage accessed.
+2024-10-07 18:58:23,951 - INFO - 127.0.0.1 - - [07/Oct/2024 18:58:23] "GET / HTTP/1.1" 200 -
+2024-10-07 18:58:23,983 - INFO - 127.0.0.1 - - [07/Oct/2024 18:58:23] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2024-10-07 19:01:31,072 - INFO - Database connection established successfully.
+2024-10-07 19:01:31,072 - INFO - Homepage accessed.
+2024-10-07 19:01:31,096 - INFO - 127.0.0.1 - - [07/Oct/2024 19:01:31] "GET / HTTP/1.1" 200 -
+2024-10-07 19:01:31,150 - INFO - 127.0.0.1 - - [07/Oct/2024 19:01:31] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2024-10-07 19:01:39,179 - INFO - 127.0.0.1 - - [07/Oct/2024 19:01:39] "GET /login HTTP/1.1" 200 -
+2024-10-07 19:01:39,217 - INFO - 127.0.0.1 - - [07/Oct/2024 19:01:39] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2024-10-07 19:01:41,461 - INFO - Database connection established successfully.
+2024-10-07 19:01:41,801 - INFO - User 'Andrea Berg' successfully authenticated.
+2024-10-07 19:01:41,801 - INFO - User 'Andrea Berg' logged in successfully.
+2024-10-07 19:01:41,802 - INFO - 127.0.0.1 - - [07/Oct/2024 19:01:41] "[32mPOST /login HTTP/1.1[0m" 302 -
+2024-10-07 19:01:41,810 - INFO - 127.0.0.1 - - [07/Oct/2024 19:01:41] "GET /streaks HTTP/1.1" 200 -
+2024-10-07 19:01:41,852 - INFO - 127.0.0.1 - - [07/Oct/2024 19:01:41] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2024-10-07 19:01:50,414 - INFO - Loaded favorites from favorites.json.
+2024-10-07 19:01:50,416 - INFO - Displayed bookmarks for user 1.
+2024-10-07 19:01:50,417 - INFO - 127.0.0.1 - - [07/Oct/2024 19:01:50] "GET /bookmark HTTP/1.1" 200 -
+2024-10-07 19:01:50,457 - INFO - 127.0.0.1 - - [07/Oct/2024 19:01:50] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2024-10-07 19:01:51,908 - INFO - 127.0.0.1 - - [07/Oct/2024 19:01:51] "GET /search HTTP/1.1" 200 -
+2024-10-07 19:01:51,941 - INFO - 127.0.0.1 - - [07/Oct/2024 19:01:51] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2024-10-07 19:01:54,037 - INFO - Search query for 'Biologie ' returned 10 results.
+2024-10-07 19:01:54,037 - INFO - Successfully retrieved 10 books for query 'Biologie '.
+2024-10-07 19:01:54,037 - INFO - Search query 'Biologie' with topic '' returned 10 results.
+2024-10-07 19:01:54,061 - INFO - 127.0.0.1 - - [07/Oct/2024 19:01:54] "POST /search HTTP/1.1" 200 -
+2024-10-07 19:01:54,093 - INFO - 127.0.0.1 - - [07/Oct/2024 19:01:54] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2024-10-07 19:01:57,861 - INFO - Loaded favorites from favorites.json.
+2024-10-07 19:01:57,861 - INFO - Book Ergebnisse Der Biologie added to favorites for user 1.
+2024-10-07 19:01:57,861 - INFO - Added favorite book 'Ergebnisse Der Biologie' for user 1.
+2024-10-07 19:01:57,861 - INFO - 127.0.0.1 - - [07/Oct/2024 19:01:57] "[32mPOST /add_favorite HTTP/1.1[0m" 302 -
+2024-10-07 19:01:57,893 - INFO - Loaded favorites from favorites.json.
+2024-10-07 19:01:57,893 - INFO - Favorites displayed for user 1 with category filter 'None'.
+2024-10-07 19:01:57,893 - INFO - 127.0.0.1 - - [07/Oct/2024 19:01:57] "GET /favorites HTTP/1.1" 200 -
+2024-10-07 19:01:57,925 - INFO - 127.0.0.1 - - [07/Oct/2024 19:01:57] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2024-10-07 19:02:01,358 - INFO - Loaded favorites from favorites.json.
+2024-10-07 19:02:01,358 - INFO - Displayed bookmarks for user 1.
+2024-10-07 19:02:01,359 - INFO - 127.0.0.1 - - [07/Oct/2024 19:02:01] "GET /bookmark HTTP/1.1" 200 -
+2024-10-07 19:02:01,396 - INFO - 127.0.0.1 - - [07/Oct/2024 19:02:01] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2024-10-07 19:02:04,692 - INFO - Database connection established successfully.
+2024-10-07 19:02:04,692 - INFO - Homepage accessed.
+2024-10-07 19:02:04,693 - INFO - 127.0.0.1 - - [07/Oct/2024 19:02:04] "GET / HTTP/1.1" 200 -
+2024-10-07 19:02:04,734 - INFO - 127.0.0.1 - - [07/Oct/2024 19:02:04] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2024-10-07 19:02:09,110 - INFO - 127.0.0.1 - - [07/Oct/2024 19:02:09] "GET /search HTTP/1.1" 200 -
+2024-10-07 19:02:09,152 - INFO - 127.0.0.1 - - [07/Oct/2024 19:02:09] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2024-10-07 19:02:10,390 - INFO - Database connection established successfully.
+2024-10-07 19:02:10,391 - INFO - Homepage accessed.
+2024-10-07 19:02:10,391 - INFO - 127.0.0.1 - - [07/Oct/2024 19:02:10] "GET / HTTP/1.1" 200 -
+2024-10-07 19:02:10,432 - INFO - 127.0.0.1 - - [07/Oct/2024 19:02:10] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2024-10-07 19:02:11,992 - INFO - Loaded favorites from favorites.json.
+2024-10-07 19:02:11,993 - INFO - Favorites displayed for user 1 with category filter 'None'.
+2024-10-07 19:02:11,994 - INFO - 127.0.0.1 - - [07/Oct/2024 19:02:11] "GET /favorites HTTP/1.1" 200 -
+2024-10-07 19:02:12,035 - INFO - 127.0.0.1 - - [07/Oct/2024 19:02:12] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2024-10-07 19:02:12,824 - INFO - Loaded favorites from favorites.json.
+2024-10-07 19:02:12,825 - INFO - Displayed bookmarks for user 1.
+2024-10-07 19:02:12,826 - INFO - 127.0.0.1 - - [07/Oct/2024 19:02:12] "GET /bookmark HTTP/1.1" 200 -
+2024-10-07 19:02:12,868 - INFO - 127.0.0.1 - - [07/Oct/2024 19:02:12] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2024-10-07 19:02:16,940 - INFO - Loaded favorites from favorites.json.
+2024-10-07 19:02:16,940 - INFO - Updated current page to 1 for book Ergebnisse Der Biologie (ISBN: 9783642948053) for user 1.
+2024-10-07 19:02:16,946 - INFO - Updated page to 1 for book with ISBN 9783642948053 for user 1.
+2024-10-07 19:02:16,955 - INFO - 127.0.0.1 - - [07/Oct/2024 19:02:16] "[35m[1mPOST /update_favorite_page HTTP/1.1[0m" 500 -
+2024-10-07 19:02:17,047 - INFO - 127.0.0.1 - - [07/Oct/2024 19:02:17] "[36mGET /update_favorite_page?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-10-07 19:02:17,062 - INFO - 127.0.0.1 - - [07/Oct/2024 19:02:17] "[36mGET /update_favorite_page?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-10-07 19:02:17,086 - INFO - 127.0.0.1 - - [07/Oct/2024 19:02:17] "GET /update_favorite_page?__debugger__=yes&cmd=resource&f=console.png&s=PkncibNuRLvn206UfaWq HTTP/1.1" 200 -
+2024-10-07 19:07:20,586 - INFO -  * Detected change in 'c:\\Users\\CL921RQ\\.vscode\\self_learning\\1\\backend\\database.py', reloading
+2024-10-07 19:07:20,660 - INFO -  * Restarting with stat
+2024-10-07 19:07:22,251 - INFO - Database connection established successfully.
+2024-10-07 19:07:22,252 - INFO - Table 'users' created or already exists.
+2024-10-07 19:07:22,291 - WARNING -  * Debugger is active!
+2024-10-07 19:07:22,296 - INFO -  * Debugger PIN: 710-992-536
+2024-10-07 19:07:24,359 - INFO - Loaded favorites from favorites.json.
+2024-10-07 19:07:24,360 - INFO - Updated current page to 1 for book Ergebnisse Der Biologie (ISBN: 9783642948053) for user 1.
+2024-10-07 19:07:24,361 - INFO - Updated page to 1 for book with ISBN 9783642948053 for user 1.
+2024-10-07 19:07:24,391 - INFO - 127.0.0.1 - - [07/Oct/2024 19:07:24] "[35m[1mPOST /update_favorite_page HTTP/1.1[0m" 500 -
+2024-10-07 19:07:24,519 - INFO - 127.0.0.1 - - [07/Oct/2024 19:07:24] "[36mGET /update_favorite_page?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-10-07 19:07:24,523 - INFO - 127.0.0.1 - - [07/Oct/2024 19:07:24] "[36mGET /update_favorite_page?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-10-07 19:07:24,545 - INFO - 127.0.0.1 - - [07/Oct/2024 19:07:24] "GET /update_favorite_page?__debugger__=yes&cmd=resource&f=console.png&s=nGVXjCNfUJP0Bzh8lqkJ HTTP/1.1" 200 -
+2024-10-07 19:07:24,568 - INFO - 127.0.0.1 - - [07/Oct/2024 19:07:24] "[36mGET /update_favorite_page?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-10-07 19:08:45,228 - INFO -  * Detected change in 'c:\\Users\\CL921RQ\\.vscode\\self_learning\\1\\backend\\database.py', reloading
+2024-10-07 19:08:45,300 - INFO -  * Restarting with stat
+2024-10-07 19:08:46,818 - INFO - Database connection established successfully.
+2024-10-07 19:08:46,819 - INFO - Table 'users' created or already exists.
+2024-10-07 19:08:46,856 - WARNING -  * Debugger is active!
+2024-10-07 19:08:46,861 - INFO -  * Debugger PIN: 710-992-536
+2024-10-07 19:08:48,585 - INFO - Loaded favorites from favorites.json.
+2024-10-07 19:08:48,585 - INFO - Updated current page to 1 for book Ergebnisse Der Biologie (ISBN: 9783642948053) for user 1.
+2024-10-07 19:08:48,587 - INFO - Updated page to 1 for book with ISBN 9783642948053 for user 1.
+2024-10-07 19:08:48,588 - INFO - Database connection established successfully.
+2024-10-07 19:08:48,599 - INFO - User 1 streak updated: Current streak is 1, Longest streak is 1, Status: reset.
+2024-10-07 19:08:48,603 - INFO - Loaded favorites from favorites.json.
+2024-10-07 19:08:48,604 - INFO - Loaded 1 favorites for user 1.
+2024-10-07 19:08:48,667 - INFO - 127.0.0.1 - - [07/Oct/2024 19:08:48] "POST /update_favorite_page HTTP/1.1" 200 -
+2024-10-07 19:08:48,753 - INFO - 127.0.0.1 - - [07/Oct/2024 19:08:48] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2024-10-07 19:08:53,078 - INFO - Database connection established successfully.
+2024-10-07 19:08:53,078 - INFO - Homepage accessed.
+2024-10-07 19:08:53,086 - INFO - 127.0.0.1 - - [07/Oct/2024 19:08:53] "GET / HTTP/1.1" 200 -
+2024-10-07 19:08:53,140 - INFO - 127.0.0.1 - - [07/Oct/2024 19:08:53] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2024-10-07 19:10:51,964 - INFO - Database connection established successfully.
+2024-10-07 19:10:51,964 - INFO - Homepage accessed.
+2024-10-07 19:10:51,991 - INFO - 127.0.0.1 - - [07/Oct/2024 19:10:51] "GET / HTTP/1.1" 200 -
+2024-10-07 19:10:52,030 - INFO - 127.0.0.1 - - [07/Oct/2024 19:10:52] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2024-10-07 19:12:09,390 - INFO -  * Detected change in 'c:\\Users\\CL921RQ\\.vscode\\self_learning\\1\\app.py', reloading
+2024-10-07 19:12:09,444 - INFO -  * Restarting with stat
+2024-10-07 19:12:10,537 - INFO - Database connection established successfully.
+2024-10-07 19:12:10,537 - INFO - Table 'users' created or already exists.
+2024-10-07 19:12:10,567 - WARNING -  * Debugger is active!
+2024-10-07 19:12:10,571 - INFO -  * Debugger PIN: 710-992-536
+2024-10-07 19:12:32,346 - INFO - Database connection established successfully.
+2024-10-07 19:12:32,360 - INFO - Displayed streak data for user 1.
+2024-10-07 19:12:32,397 - INFO - 127.0.0.1 - - [07/Oct/2024 19:12:32] "GET / HTTP/1.1" 200 -
+2024-10-07 19:12:32,487 - INFO - 127.0.0.1 - - [07/Oct/2024 19:12:32] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2024-10-07 19:14:15,789 - INFO - Database connection established successfully.
+2024-10-07 19:14:15,790 - INFO - Displayed streak data for user 1.
+2024-10-07 19:14:15,824 - INFO - 127.0.0.1 - - [07/Oct/2024 19:14:15] "GET / HTTP/1.1" 200 -
+2024-10-07 19:14:15,864 - INFO - 127.0.0.1 - - [07/Oct/2024 19:14:15] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2024-10-07 19:14:46,549 - INFO - Database connection established successfully.
+2024-10-07 19:14:46,551 - INFO - Displayed streak data for user 1.
+2024-10-07 19:14:46,576 - INFO - 127.0.0.1 - - [07/Oct/2024 19:14:46] "GET / HTTP/1.1" 200 -
+2024-10-07 19:14:46,602 - INFO - 127.0.0.1 - - [07/Oct/2024 19:14:46] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2024-10-07 19:14:48,144 - INFO - Database connection established successfully.
+2024-10-07 19:14:48,145 - INFO - Displayed streak data for user 1.
+2024-10-07 19:14:48,146 - INFO - 127.0.0.1 - - [07/Oct/2024 19:14:48] "GET / HTTP/1.1" 200 -
+2024-10-07 19:14:48,187 - INFO - 127.0.0.1 - - [07/Oct/2024 19:14:48] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2024-10-07 19:14:50,507 - INFO - Database connection established successfully.
+2024-10-07 19:14:50,509 - INFO - Displayed streak data for user 1.
+2024-10-07 19:14:50,510 - INFO - 127.0.0.1 - - [07/Oct/2024 19:14:50] "GET / HTTP/1.1" 200 -
+2024-10-07 19:14:50,546 - INFO - 127.0.0.1 - - [07/Oct/2024 19:14:50] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2024-10-07 19:15:11,684 - INFO - Database connection established successfully.
+2024-10-07 19:15:11,685 - INFO - Displayed streak data for user 1.
+2024-10-07 19:15:11,714 - INFO - 127.0.0.1 - - [07/Oct/2024 19:15:11] "GET / HTTP/1.1" 200 -
+2024-10-07 19:15:11,744 - INFO - 127.0.0.1 - - [07/Oct/2024 19:15:11] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2024-10-07 19:15:13,868 - INFO - 127.0.0.1 - - [07/Oct/2024 19:15:13] "GET /search HTTP/1.1" 200 -
+2024-10-07 19:15:13,911 - INFO - 127.0.0.1 - - [07/Oct/2024 19:15:13] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2024-10-07 19:15:17,063 - INFO - Loaded favorites from favorites.json.
+2024-10-07 19:15:17,064 - INFO - Favorites displayed for user 1 with category filter 'None'.
+2024-10-07 19:15:17,121 - INFO - 127.0.0.1 - - [07/Oct/2024 19:15:17] "GET /favorites HTTP/1.1" 200 -
+2024-10-07 19:15:17,153 - INFO - 127.0.0.1 - - [07/Oct/2024 19:15:17] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2024-10-07 19:15:18,850 - INFO - Loaded favorites from favorites.json.
+2024-10-07 19:15:18,851 - INFO - Displayed bookmarks for user 1.
+2024-10-07 19:15:18,858 - INFO - 127.0.0.1 - - [07/Oct/2024 19:15:18] "GET /bookmark HTTP/1.1" 200 -
+2024-10-07 19:15:18,891 - INFO - 127.0.0.1 - - [07/Oct/2024 19:15:18] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2024-10-07 19:15:20,113 - INFO - Loaded favorites from favorites.json.
+2024-10-07 19:15:20,114 - INFO - Loaded 1 favorites for user 1.
+2024-10-07 19:15:20,139 - INFO - 127.0.0.1 - - [07/Oct/2024 19:15:20] "GET /learnings HTTP/1.1" 200 -
+2024-10-07 19:15:20,171 - INFO - 127.0.0.1 - - [07/Oct/2024 19:15:20] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2024-10-07 19:15:57,317 - INFO -  * Detected change in 'c:\\Users\\CL921RQ\\.vscode\\self_learning\\1\\app.py', reloading
+2024-10-07 19:15:57,376 - INFO -  * Restarting with stat
+2024-10-07 19:15:58,766 - INFO - Database connection established successfully.
+2024-10-07 19:15:58,767 - INFO - Table 'users' created or already exists.
+2024-10-07 19:15:58,806 - WARNING -  * Debugger is active!
+2024-10-07 19:15:58,811 - INFO -  * Debugger PIN: 710-992-536
+2024-10-07 19:17:18,083 - INFO - Database connection established successfully.
+2024-10-07 19:17:18,084 - INFO - Table 'users' created or already exists.
+2024-10-07 19:17:18,137 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-10-07 19:17:18,137 - INFO - [33mPress CTRL+C to quit[0m
+2024-10-07 19:17:18,139 - INFO -  * Restarting with stat
+2024-10-07 19:17:19,504 - INFO - Database connection established successfully.
+2024-10-07 19:17:19,505 - INFO - Table 'users' created or already exists.
+2024-10-07 19:17:19,543 - WARNING -  * Debugger is active!
+2024-10-07 19:17:19,550 - INFO -  * Debugger PIN: 710-992-536
+2024-10-07 19:17:19,594 - INFO - Database connection established successfully.
+2024-10-07 19:17:19,599 - INFO - Displayed streak data for user 1.
+2024-10-07 19:17:19,610 - INFO - 127.0.0.1 - - [07/Oct/2024 19:17:19] "GET / HTTP/1.1" 200 -
+2024-10-07 19:17:19,706 - INFO - 127.0.0.1 - - [07/Oct/2024 19:17:19] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2024-10-07 19:17:25,310 - INFO - User logged out.
+2024-10-07 19:17:25,310 - INFO - 127.0.0.1 - - [07/Oct/2024 19:17:25] "[32mGET /logout HTTP/1.1[0m" 302 -
+2024-10-07 19:17:25,318 - INFO - Homepage accessed without login.
+2024-10-07 19:17:25,318 - INFO - 127.0.0.1 - - [07/Oct/2024 19:17:25] "GET / HTTP/1.1" 200 -
+2024-10-07 19:17:25,358 - INFO - 127.0.0.1 - - [07/Oct/2024 19:17:25] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2024-10-07 19:17:38,171 - WARNING - Unauthorized access to search page.
+2024-10-07 19:17:38,172 - INFO - 127.0.0.1 - - [07/Oct/2024 19:17:38] "[32mGET /search HTTP/1.1[0m" 302 -
+2024-10-07 19:17:38,203 - INFO - 127.0.0.1 - - [07/Oct/2024 19:17:38] "GET /login HTTP/1.1" 200 -
+2024-10-07 19:17:38,238 - INFO - 127.0.0.1 - - [07/Oct/2024 19:17:38] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2024-10-07 19:17:40,776 - INFO - Database connection established successfully.
+2024-10-07 19:17:41,117 - INFO - User 'Andrea Berg' successfully authenticated.
+2024-10-07 19:17:41,117 - INFO - User 'Andrea Berg' logged in successfully.
+2024-10-07 19:17:41,118 - INFO - 127.0.0.1 - - [07/Oct/2024 19:17:41] "[32mPOST /login HTTP/1.1[0m" 302 -
+2024-10-07 19:17:41,144 - INFO - 127.0.0.1 - - [07/Oct/2024 19:17:41] "GET /streaks HTTP/1.1" 200 -
+2024-10-07 19:17:41,190 - INFO - 127.0.0.1 - - [07/Oct/2024 19:17:41] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2024-10-07 19:17:50,170 - INFO - User logged out.
+2024-10-07 19:17:50,171 - INFO - 127.0.0.1 - - [07/Oct/2024 19:17:50] "[32mGET /logout HTTP/1.1[0m" 302 -
+2024-10-07 19:17:50,178 - INFO - Homepage accessed without login.
+2024-10-07 19:17:50,180 - INFO - 127.0.0.1 - - [07/Oct/2024 19:17:50] "GET / HTTP/1.1" 200 -
+2024-10-07 19:17:50,197 - INFO - 127.0.0.1 - - [07/Oct/2024 19:17:50] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2024-10-07 19:17:53,705 - INFO - 127.0.0.1 - - [07/Oct/2024 19:17:53] "GET /login HTTP/1.1" 200 -
+2024-10-07 19:17:53,761 - INFO - 127.0.0.1 - - [07/Oct/2024 19:17:53] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2024-10-07 19:17:57,118 - INFO - Database connection established successfully.
+2024-10-07 19:17:57,455 - INFO - User 'Andrea Berg' successfully authenticated.
+2024-10-07 19:17:57,456 - INFO - User 'Andrea Berg' logged in successfully.
+2024-10-07 19:17:57,457 - INFO - 127.0.0.1 - - [07/Oct/2024 19:17:57] "[32mPOST /login HTTP/1.1[0m" 302 -
+2024-10-07 19:17:57,465 - INFO - 127.0.0.1 - - [07/Oct/2024 19:17:57] "GET /streaks HTTP/1.1" 200 -
+2024-10-07 19:17:57,511 - INFO - 127.0.0.1 - - [07/Oct/2024 19:17:57] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2024-10-07 19:18:00,487 - INFO - Loaded favorites from favorites.json.
+2024-10-07 19:18:00,487 - INFO - Loaded 1 favorites for user 1.
+2024-10-07 19:18:00,495 - INFO - 127.0.0.1 - - [07/Oct/2024 19:18:00] "GET /learnings HTTP/1.1" 200 -
+2024-10-07 19:18:00,527 - INFO - 127.0.0.1 - - [07/Oct/2024 19:18:00] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2024-10-07 19:18:01,670 - INFO - Loaded favorites from favorites.json.
+2024-10-07 19:18:01,670 - INFO - Displayed bookmarks for user 1.
+2024-10-07 19:18:01,677 - INFO - 127.0.0.1 - - [07/Oct/2024 19:18:01] "GET /bookmark HTTP/1.1" 200 -
+2024-10-07 19:18:01,713 - INFO - 127.0.0.1 - - [07/Oct/2024 19:18:01] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2024-10-07 19:18:04,087 - INFO - Loaded favorites from favorites.json.
+2024-10-07 19:18:04,087 - INFO - Updated current page to 1 for book Ergebnisse Der Biologie (ISBN: 9783642948053) for user 1.
+2024-10-07 19:18:04,087 - INFO - Updated page to 1 for book with ISBN 9783642948053 for user 1.
+2024-10-07 19:18:04,087 - INFO - Database connection established successfully.
+2024-10-07 19:18:04,095 - INFO - User 1 streak updated: Current streak is 1, Longest streak is 1, Status: unchanged.
+2024-10-07 19:18:04,095 - INFO - Loaded favorites from favorites.json.
+2024-10-07 19:18:04,103 - INFO - Loaded 1 favorites for user 1.
+2024-10-07 19:18:04,103 - INFO - 127.0.0.1 - - [07/Oct/2024 19:18:04] "POST /update_favorite_page HTTP/1.1" 200 -
+2024-10-07 19:18:04,143 - INFO - 127.0.0.1 - - [07/Oct/2024 19:18:04] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2024-10-07 19:18:06,018 - INFO - Database connection established successfully.
+2024-10-07 19:18:06,019 - INFO - Displayed streak data for user 1.
+2024-10-07 19:18:06,020 - INFO - 127.0.0.1 - - [07/Oct/2024 19:18:06] "GET / HTTP/1.1" 200 -
+2024-10-07 19:18:06,068 - INFO - 127.0.0.1 - - [07/Oct/2024 19:18:06] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2024-10-07 19:18:24,396 - INFO - User logged out.
+2024-10-07 19:18:24,396 - INFO - 127.0.0.1 - - [07/Oct/2024 19:18:24] "[32mGET /logout HTTP/1.1[0m" 302 -
+2024-10-07 19:18:24,412 - INFO - Homepage accessed without login.
+2024-10-07 19:18:24,412 - INFO - 127.0.0.1 - - [07/Oct/2024 19:18:24] "GET / HTTP/1.1" 200 -
+2024-10-07 19:18:24,454 - INFO - 127.0.0.1 - - [07/Oct/2024 19:18:24] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2024-10-07 19:18:26,948 - INFO - 127.0.0.1 - - [07/Oct/2024 19:18:26] "GET /login HTTP/1.1" 200 -
+2024-10-07 19:18:26,990 - INFO - 127.0.0.1 - - [07/Oct/2024 19:18:26] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2024-10-07 19:18:28,463 - INFO - Database connection established successfully.
+2024-10-07 19:18:28,800 - INFO - User 'Andrea Berg' successfully authenticated.
+2024-10-07 19:18:28,801 - INFO - User 'Andrea Berg' logged in successfully.
+2024-10-07 19:18:28,801 - INFO - 127.0.0.1 - - [07/Oct/2024 19:18:28] "[32mPOST /login HTTP/1.1[0m" 302 -
+2024-10-07 19:18:28,807 - INFO - 127.0.0.1 - - [07/Oct/2024 19:18:28] "GET /streaks HTTP/1.1" 200 -
+2024-10-07 19:18:28,847 - INFO - 127.0.0.1 - - [07/Oct/2024 19:18:28] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2024-10-07 19:22:44,677 - INFO - Database connection established successfully.
+2024-10-07 19:22:44,678 - INFO - Table 'users' created or already exists.
+2024-10-07 19:22:44,729 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-10-07 19:22:44,729 - INFO - [33mPress CTRL+C to quit[0m
+2024-10-07 19:22:44,732 - INFO -  * Restarting with stat
+2024-10-07 19:22:46,114 - INFO - Database connection established successfully.
+2024-10-07 19:22:46,115 - INFO - Table 'users' created or already exists.
+2024-10-07 19:22:46,153 - WARNING -  * Debugger is active!
+2024-10-07 19:22:46,158 - INFO -  * Debugger PIN: 710-992-536
+2024-10-07 19:22:47,920 - INFO - 127.0.0.1 - - [07/Oct/2024 19:22:47] "GET /streaks HTTP/1.1" 200 -
+2024-10-07 19:22:48,027 - INFO - 127.0.0.1 - - [07/Oct/2024 19:22:48] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2024-10-07 19:22:51,123 - INFO - Loaded favorites from favorites.json.
+2024-10-07 19:22:51,124 - INFO - Loaded 1 favorites for user 1.
+2024-10-07 19:22:51,130 - INFO - 127.0.0.1 - - [07/Oct/2024 19:22:51] "GET /learnings HTTP/1.1" 200 -
+2024-10-07 19:22:51,166 - INFO - 127.0.0.1 - - [07/Oct/2024 19:22:51] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2024-10-07 19:22:53,573 - INFO - Loaded favorites from favorites.json.
+2024-10-07 19:22:53,577 - INFO - Displayed bookmarks for user 1.
+2024-10-07 19:22:53,585 - INFO - 127.0.0.1 - - [07/Oct/2024 19:22:53] "GET /bookmark HTTP/1.1" 200 -
+2024-10-07 19:22:53,622 - INFO - 127.0.0.1 - - [07/Oct/2024 19:22:53] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2024-10-07 19:22:54,927 - INFO - Loaded favorites from favorites.json.
+2024-10-07 19:22:54,927 - INFO - Updated current page to 1 for book Ergebnisse Der Biologie (ISBN: 9783642948053) for user 1.
+2024-10-07 19:22:54,929 - INFO - Updated page to 1 for book with ISBN 9783642948053 for user 1.
+2024-10-07 19:22:54,930 - INFO - Database connection established successfully.
+2024-10-07 19:22:54,934 - INFO - User 1 streak updated: Current streak is 1, Longest streak is 1, Status: unchanged.
+2024-10-07 19:22:54,938 - INFO - Loaded favorites from favorites.json.
+2024-10-07 19:22:54,939 - INFO - Loaded 1 favorites for user 1.
+2024-10-07 19:22:54,940 - INFO - 127.0.0.1 - - [07/Oct/2024 19:22:54] "POST /update_favorite_page HTTP/1.1" 200 -
+2024-10-07 19:22:54,985 - INFO - 127.0.0.1 - - [07/Oct/2024 19:22:54] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2024-10-07 19:22:57,387 - INFO - Database connection established successfully.
+2024-10-07 19:22:57,388 - INFO - Displayed streak data for user 1.
+2024-10-07 19:22:57,395 - INFO - 127.0.0.1 - - [07/Oct/2024 19:22:57] "GET / HTTP/1.1" 200 -
+2024-10-07 19:22:57,447 - INFO - 127.0.0.1 - - [07/Oct/2024 19:22:57] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2024-10-07 19:22:59,838 - INFO - User logged out.
+2024-10-07 19:22:59,840 - INFO - 127.0.0.1 - - [07/Oct/2024 19:22:59] "[32mGET /logout HTTP/1.1[0m" 302 -
+2024-10-07 19:22:59,853 - INFO - Homepage accessed without login.
+2024-10-07 19:22:59,854 - INFO - 127.0.0.1 - - [07/Oct/2024 19:22:59] "GET / HTTP/1.1" 200 -
+2024-10-07 19:22:59,898 - INFO - 127.0.0.1 - - [07/Oct/2024 19:22:59] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2024-10-07 19:23:02,362 - INFO - 127.0.0.1 - - [07/Oct/2024 19:23:02] "GET /login HTTP/1.1" 200 -
+2024-10-07 19:23:02,398 - INFO - 127.0.0.1 - - [07/Oct/2024 19:23:02] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2024-10-07 19:23:03,686 - INFO - Database connection established successfully.
+2024-10-07 19:23:04,032 - INFO - User 'Andrea Berg' successfully authenticated.
+2024-10-07 19:23:04,032 - INFO - User 'Andrea Berg' logged in successfully.
+2024-10-07 19:23:04,033 - INFO - 127.0.0.1 - - [07/Oct/2024 19:23:04] "[32mPOST /login HTTP/1.1[0m" 302 -
+2024-10-07 19:23:04,042 - INFO - 127.0.0.1 - - [07/Oct/2024 19:23:04] "GET /streaks HTTP/1.1" 200 -
+2024-10-07 19:23:04,081 - INFO - 127.0.0.1 - - [07/Oct/2024 19:23:04] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2024-10-07 19:25:28,538 - INFO -  * Detected change in 'c:\\Users\\CL921RQ\\.vscode\\self_learning\\1\\app.py', reloading
+2024-10-07 19:25:28,600 - INFO -  * Restarting with stat
+2024-10-07 19:25:30,124 - INFO - Database connection established successfully.
+2024-10-07 19:25:30,124 - INFO - Table 'users' created or already exists.
+2024-10-07 19:25:30,173 - WARNING -  * Debugger is active!
+2024-10-07 19:25:30,179 - INFO -  * Debugger PIN: 710-992-536
+2024-10-07 19:26:02,847 - INFO - 127.0.0.1 - - [07/Oct/2024 19:26:02] "GET /streaks HTTP/1.1" 200 -
+2024-10-07 19:26:02,951 - INFO - 127.0.0.1 - - [07/Oct/2024 19:26:02] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2024-10-07 19:26:03,887 - INFO - 127.0.0.1 - - [07/Oct/2024 19:26:03] "GET /streaks HTTP/1.1" 200 -
+2024-10-07 19:26:03,924 - INFO - 127.0.0.1 - - [07/Oct/2024 19:26:03] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2024-10-07 19:26:04,738 - INFO - 127.0.0.1 - - [07/Oct/2024 19:26:04] "GET /streaks HTTP/1.1" 200 -
+2024-10-07 19:26:04,773 - INFO - 127.0.0.1 - - [07/Oct/2024 19:26:04] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2024-10-07 19:26:54,070 - INFO -  * Detected change in 'c:\\Users\\CL921RQ\\.vscode\\self_learning\\1\\app.py', reloading
+2024-10-07 19:26:54,122 - INFO -  * Restarting with stat
+2024-10-07 19:26:55,403 - INFO - Database connection established successfully.
+2024-10-07 19:26:55,403 - INFO - Table 'users' created or already exists.
+2024-10-07 19:26:55,443 - WARNING -  * Debugger is active!
+2024-10-07 19:26:55,451 - INFO -  * Debugger PIN: 710-992-536
+2024-10-07 19:26:56,557 - INFO -  * Detected change in 'c:\\Users\\CL921RQ\\.vscode\\self_learning\\1\\app.py', reloading
+2024-10-07 19:26:56,616 - INFO -  * Restarting with stat
+2024-10-07 19:26:57,915 - INFO - Database connection established successfully.
+2024-10-07 19:26:57,916 - INFO - Table 'users' created or already exists.
+2024-10-07 19:26:57,952 - WARNING -  * Debugger is active!
+2024-10-07 19:26:57,958 - INFO -  * Debugger PIN: 710-992-536
+2024-10-07 19:27:32,132 - INFO -  * Detected change in 'c:\\Users\\CL921RQ\\.vscode\\self_learning\\1\\app.py', reloading
+2024-10-07 19:27:32,188 - INFO -  * Restarting with stat
+2024-10-07 19:27:33,518 - INFO - Database connection established successfully.
+2024-10-07 19:27:33,519 - INFO - Table 'users' created or already exists.
+2024-10-07 19:27:33,560 - WARNING -  * Debugger is active!
+2024-10-07 19:27:33,566 - INFO -  * Debugger PIN: 710-992-536
+2024-10-07 19:27:41,909 - INFO -  * Detected change in 'c:\\Users\\CL921RQ\\.vscode\\self_learning\\1\\app.py', reloading
+2024-10-07 19:27:42,031 - INFO -  * Restarting with stat
+2024-10-07 19:27:43,513 - INFO - Database connection established successfully.
+2024-10-07 19:27:43,514 - INFO - Table 'users' created or already exists.
+2024-10-07 19:27:43,552 - WARNING -  * Debugger is active!
+2024-10-07 19:27:43,562 - INFO -  * Debugger PIN: 710-992-536
+2024-10-07 19:27:44,958 - INFO - 127.0.0.1 - - [07/Oct/2024 19:27:44] "GET /streaks HTTP/1.1" 200 -
+2024-10-07 19:27:45,047 - INFO - 127.0.0.1 - - [07/Oct/2024 19:27:45] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2024-10-07 19:27:46,710 - INFO - Loaded favorites from favorites.json.
+2024-10-07 19:27:46,710 - INFO - Loaded 1 favorites for user 1.
+2024-10-07 19:27:46,716 - INFO - 127.0.0.1 - - [07/Oct/2024 19:27:46] "GET /learnings HTTP/1.1" 200 -
+2024-10-07 19:27:46,752 - INFO - 127.0.0.1 - - [07/Oct/2024 19:27:46] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2024-10-07 19:27:48,657 - INFO - Loaded favorites from favorites.json.
+2024-10-07 19:27:48,658 - INFO - Displayed bookmarks for user 1.
+2024-10-07 19:27:48,666 - INFO - 127.0.0.1 - - [07/Oct/2024 19:27:48] "GET /bookmark HTTP/1.1" 200 -
+2024-10-07 19:27:48,705 - INFO - 127.0.0.1 - - [07/Oct/2024 19:27:48] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2024-10-07 19:27:50,542 - INFO - Loaded favorites from favorites.json.
+2024-10-07 19:27:50,543 - INFO - Updated current page to 1 for book Ergebnisse Der Biologie (ISBN: 9783642948053) for user 1.
+2024-10-07 19:27:50,544 - INFO - Updated page to 1 for book with ISBN 9783642948053 for user 1.
+2024-10-07 19:27:50,545 - INFO - Database connection established successfully.
+2024-10-07 19:27:50,551 - INFO - User 1 streak updated: Current streak is 1, Longest streak is 1, Status: unchanged.
+2024-10-07 19:27:50,555 - INFO - Loaded favorites from favorites.json.
+2024-10-07 19:27:50,556 - INFO - Loaded 1 favorites for user 1.
+2024-10-07 19:27:50,557 - INFO - 127.0.0.1 - - [07/Oct/2024 19:27:50] "POST /update_favorite_page HTTP/1.1" 200 -
+2024-10-07 19:27:50,591 - INFO - 127.0.0.1 - - [07/Oct/2024 19:27:50] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2024-10-07 19:27:52,823 - INFO - Database connection established successfully.
+2024-10-07 19:27:52,824 - INFO - Displayed streak data for user 1.
+2024-10-07 19:27:52,845 - INFO - 127.0.0.1 - - [07/Oct/2024 19:27:52] "GET / HTTP/1.1" 200 -
+2024-10-07 19:28:01,988 - INFO - User logged out.
+2024-10-07 19:28:01,989 - INFO - 127.0.0.1 - - [07/Oct/2024 19:28:01] "[32mGET /logout HTTP/1.1[0m" 302 -
+2024-10-07 19:28:02,000 - INFO - Homepage accessed without login.
+2024-10-07 19:28:02,001 - INFO - 127.0.0.1 - - [07/Oct/2024 19:28:02] "GET / HTTP/1.1" 200 -
+2024-10-07 19:28:11,225 - INFO - 127.0.0.1 - - [07/Oct/2024 19:28:11] "GET /login HTTP/1.1" 200 -
+2024-10-07 19:28:11,264 - INFO - 127.0.0.1 - - [07/Oct/2024 19:28:11] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2024-10-07 19:28:12,850 - INFO - Database connection established successfully.
+2024-10-07 19:28:13,190 - INFO - User 'Andrea Berg' successfully authenticated.
+2024-10-07 19:28:13,191 - INFO - 127.0.0.1 - - [07/Oct/2024 19:28:13] "[32mPOST /login HTTP/1.1[0m" 302 -
+2024-10-07 19:28:13,200 - INFO - Database connection established successfully.
+2024-10-07 19:28:13,201 - INFO - Displayed streak data for user 1.
+2024-10-07 19:28:13,202 - INFO - 127.0.0.1 - - [07/Oct/2024 19:28:13] "GET / HTTP/1.1" 200 -
+2024-10-07 19:30:17,147 - INFO - Database connection established successfully.
+2024-10-07 19:30:17,149 - INFO - Displayed streak data for user 1.
+2024-10-07 19:30:17,284 - INFO - 127.0.0.1 - - [07/Oct/2024 19:30:17] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2024-10-07 19:30:17,358 - INFO - 127.0.0.1 - - [07/Oct/2024 19:30:17] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-10-07 19:30:17,372 - INFO - 127.0.0.1 - - [07/Oct/2024 19:30:17] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-10-07 19:30:17,426 - INFO - 127.0.0.1 - - [07/Oct/2024 19:30:17] "GET /?__debugger__=yes&cmd=resource&f=console.png&s=gmkgaGxJmFnEQoS0umic HTTP/1.1" 200 -
+2024-10-07 19:30:17,456 - INFO - 127.0.0.1 - - [07/Oct/2024 19:30:17] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-10-07 19:30:18,547 - INFO - Database connection established successfully.
+2024-10-07 19:30:18,547 - INFO - Displayed streak data for user 1.
+2024-10-07 19:30:18,566 - INFO - 127.0.0.1 - - [07/Oct/2024 19:30:18] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2024-10-07 19:30:18,610 - INFO - 127.0.0.1 - - [07/Oct/2024 19:30:18] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-10-07 19:30:18,614 - INFO - 127.0.0.1 - - [07/Oct/2024 19:30:18] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-10-07 19:30:18,634 - INFO - 127.0.0.1 - - [07/Oct/2024 19:30:18] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png&s=gmkgaGxJmFnEQoS0umic HTTP/1.1[0m" 304 -
+2024-10-07 19:30:18,667 - INFO - 127.0.0.1 - - [07/Oct/2024 19:30:18] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-10-07 19:30:50,751 - INFO - Database connection established successfully.
+2024-10-07 19:30:50,752 - INFO - Displayed streak data for user 1.
+2024-10-07 19:30:50,787 - INFO - 127.0.0.1 - - [07/Oct/2024 19:30:50] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2024-10-07 19:30:50,830 - INFO - 127.0.0.1 - - [07/Oct/2024 19:30:50] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-10-07 19:30:50,836 - INFO - 127.0.0.1 - - [07/Oct/2024 19:30:50] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-10-07 19:30:50,859 - INFO - 127.0.0.1 - - [07/Oct/2024 19:30:50] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png&s=gmkgaGxJmFnEQoS0umic HTTP/1.1[0m" 304 -
+2024-10-07 19:30:50,893 - INFO - 127.0.0.1 - - [07/Oct/2024 19:30:50] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-10-07 19:30:51,741 - INFO - Database connection established successfully.
+2024-10-07 19:30:51,742 - INFO - Displayed streak data for user 1.
+2024-10-07 19:30:51,761 - INFO - 127.0.0.1 - - [07/Oct/2024 19:30:51] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2024-10-07 19:30:51,811 - INFO - 127.0.0.1 - - [07/Oct/2024 19:30:51] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-10-07 19:30:51,825 - INFO - 127.0.0.1 - - [07/Oct/2024 19:30:51] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-10-07 19:30:51,846 - INFO - 127.0.0.1 - - [07/Oct/2024 19:30:51] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png&s=gmkgaGxJmFnEQoS0umic HTTP/1.1[0m" 304 -
+2024-10-07 19:30:51,883 - INFO - 127.0.0.1 - - [07/Oct/2024 19:30:51] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-10-07 19:30:52,110 - INFO - Database connection established successfully.
+2024-10-07 19:30:52,111 - INFO - Displayed streak data for user 1.
+2024-10-07 19:30:52,125 - INFO - 127.0.0.1 - - [07/Oct/2024 19:30:52] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2024-10-07 19:30:52,165 - INFO - 127.0.0.1 - - [07/Oct/2024 19:30:52] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-10-07 19:30:52,170 - INFO - 127.0.0.1 - - [07/Oct/2024 19:30:52] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-10-07 19:30:52,189 - INFO - 127.0.0.1 - - [07/Oct/2024 19:30:52] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png&s=gmkgaGxJmFnEQoS0umic HTTP/1.1[0m" 304 -
+2024-10-07 19:30:52,220 - INFO - 127.0.0.1 - - [07/Oct/2024 19:30:52] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-10-07 19:31:25,515 - INFO - Database connection established successfully.
+2024-10-07 19:31:25,516 - INFO - Displayed streak data for user 1.
+2024-10-07 19:31:25,540 - INFO - 127.0.0.1 - - [07/Oct/2024 19:31:25] "GET / HTTP/1.1" 200 -
+2024-10-07 19:31:25,593 - INFO - 127.0.0.1 - - [07/Oct/2024 19:31:25] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2024-10-07 19:31:29,520 - INFO - User logged out.
+2024-10-07 19:31:29,521 - INFO - 127.0.0.1 - - [07/Oct/2024 19:31:29] "[32mGET /logout HTTP/1.1[0m" 302 -
+2024-10-07 19:31:29,536 - INFO - Homepage accessed without login.
+2024-10-07 19:31:29,538 - INFO - 127.0.0.1 - - [07/Oct/2024 19:31:29] "GET / HTTP/1.1" 200 -
+2024-10-07 19:31:29,582 - INFO - 127.0.0.1 - - [07/Oct/2024 19:31:29] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2024-10-07 19:31:31,870 - INFO - 127.0.0.1 - - [07/Oct/2024 19:31:31] "GET /login HTTP/1.1" 200 -
+2024-10-07 19:31:31,910 - INFO - 127.0.0.1 - - [07/Oct/2024 19:31:31] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2024-10-07 19:31:33,180 - INFO - Database connection established successfully.
+2024-10-07 19:31:33,521 - INFO - User 'Andrea Berg' successfully authenticated.
+2024-10-07 19:31:33,523 - INFO - 127.0.0.1 - - [07/Oct/2024 19:31:33] "[32mPOST /login HTTP/1.1[0m" 302 -
+2024-10-07 19:31:33,533 - INFO - Database connection established successfully.
+2024-10-07 19:31:33,534 - INFO - Displayed streak data for user 1.
+2024-10-07 19:31:33,535 - INFO - 127.0.0.1 - - [07/Oct/2024 19:31:33] "GET / HTTP/1.1" 200 -
+2024-10-07 19:31:33,577 - INFO - 127.0.0.1 - - [07/Oct/2024 19:31:33] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2024-10-07 19:32:53,908 - INFO - Database connection established successfully.
+2024-10-07 19:32:53,909 - INFO - Displayed streak data for user 1.
+2024-10-07 19:32:53,932 - INFO - 127.0.0.1 - - [07/Oct/2024 19:32:53] "GET / HTTP/1.1" 200 -
+2024-10-07 19:32:53,966 - INFO - 127.0.0.1 - - [07/Oct/2024 19:32:53] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2024-10-07 19:33:05,023 - INFO - User logged out.
+2024-10-07 19:33:05,023 - INFO - 127.0.0.1 - - [07/Oct/2024 19:33:05] "[32mGET /logout HTTP/1.1[0m" 302 -
+2024-10-07 19:33:05,047 - INFO - Homepage accessed without login.
+2024-10-07 19:33:05,047 - INFO - 127.0.0.1 - - [07/Oct/2024 19:33:05] "GET / HTTP/1.1" 200 -
+2024-10-07 19:33:05,090 - INFO - 127.0.0.1 - - [07/Oct/2024 19:33:05] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2024-10-07 19:34:46,599 - INFO - Homepage accessed without login.
+2024-10-07 19:34:46,628 - INFO - 127.0.0.1 - - [07/Oct/2024 19:34:46] "GET / HTTP/1.1" 200 -
+2024-10-07 19:34:46,671 - INFO - 127.0.0.1 - - [07/Oct/2024 19:34:46] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2024-10-07 19:35:08,468 - WARNING - Unauthorized access to search page.
+2024-10-07 19:35:08,469 - INFO - 127.0.0.1 - - [07/Oct/2024 19:35:08] "[32mGET /search HTTP/1.1[0m" 302 -
+2024-10-07 19:35:08,478 - INFO - 127.0.0.1 - - [07/Oct/2024 19:35:08] "GET /login HTTP/1.1" 200 -
+2024-10-07 19:35:08,516 - INFO - 127.0.0.1 - - [07/Oct/2024 19:35:08] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2024-10-07 19:35:09,978 - INFO - Loaded favorites from favorites.json.
+2024-10-07 19:35:09,978 - INFO - Favorites displayed for user None with category filter 'None'.
+2024-10-07 19:35:10,026 - INFO - 127.0.0.1 - - [07/Oct/2024 19:35:10] "GET /favorites HTTP/1.1" 200 -
+2024-10-07 19:35:10,058 - INFO - 127.0.0.1 - - [07/Oct/2024 19:35:10] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2024-10-07 19:35:11,167 - WARNING - Unauthorized access to bookmarks.
+2024-10-07 19:35:11,167 - INFO - 127.0.0.1 - - [07/Oct/2024 19:35:11] "[32mGET /bookmark HTTP/1.1[0m" 302 -
+2024-10-07 19:35:11,176 - INFO - 127.0.0.1 - - [07/Oct/2024 19:35:11] "GET /login HTTP/1.1" 200 -
+2024-10-07 19:35:11,216 - INFO - 127.0.0.1 - - [07/Oct/2024 19:35:11] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2024-10-07 19:35:12,735 - WARNING - Unauthorized access to learnings.
+2024-10-07 19:35:12,736 - INFO - 127.0.0.1 - - [07/Oct/2024 19:35:12] "[32mGET /learnings HTTP/1.1[0m" 302 -
+2024-10-07 19:35:12,753 - INFO - 127.0.0.1 - - [07/Oct/2024 19:35:12] "GET /login HTTP/1.1" 200 -
+2024-10-07 19:35:12,799 - INFO - 127.0.0.1 - - [07/Oct/2024 19:35:12] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2024-10-07 19:35:13,987 - INFO - Homepage accessed without login.
+2024-10-07 19:35:13,988 - INFO - 127.0.0.1 - - [07/Oct/2024 19:35:13] "GET / HTTP/1.1" 200 -
+2024-10-07 19:35:14,025 - INFO - 127.0.0.1 - - [07/Oct/2024 19:35:14] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2024-10-07 19:35:16,548 - INFO - 127.0.0.1 - - [07/Oct/2024 19:35:16] "GET /login HTTP/1.1" 200 -
+2024-10-07 19:35:16,591 - INFO - 127.0.0.1 - - [07/Oct/2024 19:35:16] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2024-10-07 19:35:17,783 - INFO - Database connection established successfully.
+2024-10-07 19:35:18,119 - INFO - User 'Andrea Berg' successfully authenticated.
+2024-10-07 19:35:18,121 - INFO - 127.0.0.1 - - [07/Oct/2024 19:35:18] "[32mPOST /login HTTP/1.1[0m" 302 -
+2024-10-07 19:35:18,129 - INFO - Database connection established successfully.
+2024-10-07 19:35:18,130 - INFO - Displayed streak data for user 1.
+2024-10-07 19:35:18,130 - INFO - 127.0.0.1 - - [07/Oct/2024 19:35:18] "GET / HTTP/1.1" 200 -
+2024-10-07 19:35:18,172 - INFO - 127.0.0.1 - - [07/Oct/2024 19:35:18] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2024-10-07 19:39:26,021 - INFO -  * Detected change in 'c:\\Users\\CL921RQ\\.vscode\\self_learning\\1\\backend\\database.py', reloading
+2024-10-07 19:39:26,091 - INFO -  * Restarting with stat

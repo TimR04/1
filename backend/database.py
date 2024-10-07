@@ -13,6 +13,7 @@ import sqlite3
 import logging
 import bcrypt
 import hashlib
+from datetime import datetime, timedelta
 
 # Set up logging configuration
 logging.basicConfig(
@@ -22,21 +23,12 @@ logging.basicConfig(
 )
 
 
-def connect_db():
+def connect_to_db():
     """
     Establishes a connection to the SQLite database.
 
     Returns:
         Connection object: SQLite connection to 'database.db'.
-
-    Tests:
-        1. **Database Connection Success**:
-            - Input: Attempt to connect to the database.
-            - Expected Outcome: A connection object is returned if the database exists.
-        
-        2. **Database Connection Error Handling**:
-            - Input: (Simulate) Attempt to connect to a non-existent database.
-            - Expected Outcome: An exception should be raised indicating that the database cannot be found (this requires a mock or testing environment).
     """
     try:
         conn = sqlite3.connect('database.db')
@@ -46,8 +38,9 @@ def connect_db():
         logging.error(f"Database connection failed: {e}")
         raise e
 
+# User Management Functions
 
-def create_tables():
+def create_user_table():
     """
     Creates the 'users' table in the database if it does not exist.
 
@@ -56,33 +49,33 @@ def create_tables():
 
     Tests:
         1. **Table Creation Success**:
-            - Input: Call create_tables() when the database is empty.
+            - Input: Call create_user_table() when the database is empty.
             - Expected Outcome: Tables 'users' are created successfully without raising any errors.
         
         2. **Table Existence Check**:
-            - Input: Call create_tables() twice in a row.
+            - Input: Call create_user_table() twice in a row.
             - Expected Outcome: The second call should not raise any errors, and the tables should remain unchanged.
     """
-    conn = connect_db()
+    conn = connect_to_db()
     cur = conn.cursor()
-
     try:
-        # Create 'users' table if it does not exist
         cur.execute('''
             CREATE TABLE IF NOT EXISTS users (
                 id INTEGER PRIMARY KEY AUTOINCREMENT,
                 username TEXT NOT NULL,
-                password TEXT NOT NULL
+                password TEXT NOT NULL,
+                last_read_date DATE,
+                current_streak INTEGER DEFAULT 0,
+                longest_streak INTEGER DEFAULT 0
             )
         ''')
         logging.info("Table 'users' created or already exists.")
         conn.commit()
     except sqlite3.Error as e:
-        logging.error(f"Error creating tables: {e}")
+        logging.error(f"Error creating 'users' table: {e}")
         raise e
     finally:
         conn.close()
-
 
 def register_user(username, password):
     """
@@ -105,7 +98,7 @@ def register_user(username, password):
     hashed_password = hash_password(password)
 
     try:
-        conn = connect_db()
+        conn = connect_to_db()
         cur = conn.cursor()
         cur.execute(
             "INSERT INTO users (username, password) VALUES (?, ?)",
@@ -117,7 +110,6 @@ def register_user(username, password):
         logging.error(f"Error during user registration: {e}")
     finally:
         conn.close()
-
 
 def authenticate_user(username, password):
     """
@@ -140,7 +132,7 @@ def authenticate_user(username, password):
             - Expected Outcome: Returns None and logs a warning message.
     """
     try:
-        conn = connect_db()
+        conn = connect_to_db()
         cur = conn.cursor()
         cur.execute("SELECT id, username, password FROM users")
         users = cur.fetchall()
@@ -151,7 +143,7 @@ def authenticate_user(username, password):
         conn.close()
 
     for user in users:
-        stored_username_hash = user[1]  # The hashed username from the DB
+        stored_username_hash = user[1]
         if check_username_hash(stored_username_hash, username):
             if check_password(user[2], password):
                 logging.info(f"User '{username}' successfully authenticated.")
@@ -159,6 +151,7 @@ def authenticate_user(username, password):
     logging.warning(f"Authentication failed for user '{username}'.")
     return None
 
+# Password and Username Hashing Functions
 
 def hash_password(password):
     """
@@ -179,7 +172,6 @@ def hash_password(password):
     hashed = bcrypt.hashpw(password.encode('utf-8'), salt)
     return hashed.decode('utf-8')
 
-
 def check_password(hashed_password, password):
     """
     Verifies a password against the hashed version.
@@ -190,18 +182,8 @@ def check_password(hashed_password, password):
 
     Returns:
         bool: True if the password matches, False otherwise.
-
-    Tests:
-        1. **Correct Password**:
-            - Input: A correct plain text password and its hash.
-            - Expected Outcome: Returns True.
-        
-        2. **Incorrect Password**:
-            - Input: A wrong plain text password and a hash.
-            - Expected Outcome: Returns False.
     """
     return bcrypt.checkpw(password.encode('utf-8'), hashed_password.encode('utf-8'))
-
 
 def hash_username(username):
     """
@@ -212,14 +194,8 @@ def hash_username(username):
 
     Returns:
         str: The SHA-256 hash of the username.
-
-    Tests:
-        1. **Hash Generation**:
-            - Input: A sample username.
-            - Expected Outcome: Returns a SHA-256 hash string.
     """
     return hashlib.sha256(username.encode('utf-8')).hexdigest()
-
 
 def check_username_hash(stored_hash, username):
     """
@@ -231,14 +207,105 @@ def check_username_hash(stored_hash, username):
 
     Returns:
         bool: True if the hash matches, False otherwise.
-
-    Tests:
-        1. **Correct Username Match**:
-            - Input: A correct username and its stored hash.
-            - Expected Outcome: Returns True.
-        
-        2. **Incorrect Username Match**:
-            - Input: A wrong username and a stored hash.
-            - Expected Outcome: Returns False.
     """
     return stored_hash == hash_username(username)
+
+# Reading Streak Management Functions
+
+def update_reading_streak(user_id):
+    """
+    Updates the user's reading streak based on their last reading date.
+    
+    Args:
+        user_id (int): The ID of the user.
+    
+    Returns:
+        dict: A dictionary containing the user's updated current streak, longest streak, last read date, and streak status.
+    """
+    conn = connect_to_db()
+    cur = conn.cursor()
+
+    try:
+        cur.execute("SELECT last_read_date, current_streak, longest_streak FROM users WHERE id = ?", (user_id,))
+        user_data = cur.fetchone()
+
+        last_read_date_str, current_streak, longest_streak = user_data if user_data else (None, 0, 0)
+        last_read_date = datetime.strptime(last_read_date_str, '%Y-%m-%d').date() if last_read_date_str else None
+
+        today = datetime.now().date()
+
+        if last_read_date == today:
+            streak_status = "unchanged"
+        elif last_read_date == today - timedelta(days=1):
+            current_streak += 1
+            streak_status = "continued"
+        else:
+            current_streak = 1
+            streak_status = "reset"
+
+        if current_streak > longest_streak:
+            longest_streak = current_streak
+
+        cur.execute(
+            "UPDATE users SET last_read_date = ?, current_streak = ?, longest_streak = ? WHERE id = ?",
+            (today.strftime('%Y-%m-%d'), current_streak, longest_streak, user_id)
+        )
+        conn.commit()
+
+        logging.info(f"User {user_id} streak updated: Current streak is {current_streak}, Longest streak is {longest_streak}, Status: {streak_status}.")
+        return {
+            "current_streak": current_streak,
+            "longest_streak": longest_streak,
+            "last_read_date": today,
+            "streak_status": streak_status
+        }
+
+    except sqlite3.Error as e:
+        logging.error(f"Database error while updating reading streak for user {user_id}: {e}")
+        return {
+            "current_streak": 0,
+            "longest_streak": 0,
+            "last_read_date": None,
+            "streak_status": "error"
+        }
+    finally:
+        conn.close()
+
+def get_user_streak_data(user_id):
+    """
+    Retrieves the user's streak data from the database.
+    
+    Args:
+        user_id (int): The ID of the user.
+    
+    Returns:
+        dict: A dictionary containing 'current_streak', 'longest_streak', and 'last_read_date'.
+    """
+    conn = connect_to_db()
+    cur = conn.cursor()
+    
+    try:
+        cur.execute("SELECT current_streak, longest_streak, last_read_date FROM users WHERE id = ?", (user_id,))
+        result = cur.fetchone()
+        
+        if result:
+            current_streak, longest_streak, last_read_date = result
+            return {
+                "current_streak": current_streak,
+                "longest_streak": longest_streak,
+                "last_read_date": last_read_date
+            }
+        return {
+            "current_streak": 0,
+            "longest_streak": 0,
+            "last_read_date": None
+        }
+    except sqlite3.Error as e:
+        logging.error(f"Error retrieving streak data for user {user_id}: {e}")
+        return {
+            "current_streak": 0,
+            "longest_streak": 0,
+            "last_read_date": None
+        }
+    finally:
+        conn.close()
