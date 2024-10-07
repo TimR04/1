@@ -28,9 +28,6 @@ logging.basicConfig(filename='application.log',
                     level=logging.INFO, 
                     format='%(asctime)s - %(levelname)s - %(message)s')
 
-# Create tables if they do not exist
-with app.app_context():
-    database.create_tables()
 
 
 @app.route('/')
@@ -287,7 +284,7 @@ def update_favorite_page():
     logging.info(f"Updated page to {current_page} for book with ISBN {book_isbn} for user {user_id}.")
 
     # Update the user's reading streak
-    database.update_reading_streak(user_id, current_page)
+    database.update_reading_streak(user_id)
 
     # Reload the page with the updated data
     favorites = json_storage.load_user_favorites(user_id)

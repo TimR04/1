@@ -1807,3 +1807,208 @@
 2024-10-07 19:35:18,172 - INFO - 127.0.0.1 - - [07/Oct/2024 19:35:18] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
 2024-10-07 19:39:26,021 - INFO -  * Detected change in 'c:\\Users\\CL921RQ\\.vscode\\self_learning\\1\\backend\\database.py', reloading
 2024-10-07 19:39:26,091 - INFO -  * Restarting with stat
+2024-10-07 20:13:44,488 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-10-07 20:13:44,488 - INFO - [33mPress CTRL+C to quit[0m
+2024-10-07 20:13:44,488 - INFO -  * Restarting with stat
+2024-10-07 20:13:45,520 - WARNING -  * Debugger is active!
+2024-10-07 20:13:45,520 - INFO -  * Debugger PIN: 710-992-536
+2024-10-07 20:13:59,920 - INFO - Database connection established successfully.
+2024-10-07 20:13:59,920 - INFO - Displayed streak data for user 1.
+2024-10-07 20:13:59,977 - INFO - 127.0.0.1 - - [07/Oct/2024 20:13:59] "GET / HTTP/1.1" 200 -
+2024-10-07 20:14:00,054 - INFO - 127.0.0.1 - - [07/Oct/2024 20:14:00] "GET /static/styles.css HTTP/1.1" 200 -
+2024-10-07 20:14:00,147 - INFO - 127.0.0.1 - - [07/Oct/2024 20:14:00] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-10-07 20:14:04,812 - INFO - 127.0.0.1 - - [07/Oct/2024 20:14:04] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2024-10-07 20:14:08,513 - INFO - User logged out.
+2024-10-07 20:14:08,513 - INFO - 127.0.0.1 - - [07/Oct/2024 20:14:08] "[32mGET /logout HTTP/1.1[0m" 302 -
+2024-10-07 20:14:08,522 - INFO - Homepage accessed without login.
+2024-10-07 20:14:08,523 - INFO - 127.0.0.1 - - [07/Oct/2024 20:14:08] "GET / HTTP/1.1" 200 -
+2024-10-07 20:14:08,553 - INFO - 127.0.0.1 - - [07/Oct/2024 20:14:08] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2024-10-07 20:14:13,372 - INFO - 127.0.0.1 - - [07/Oct/2024 20:14:13] "GET /login HTTP/1.1" 200 -
+2024-10-07 20:14:13,397 - INFO - 127.0.0.1 - - [07/Oct/2024 20:14:13] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2024-10-07 20:14:16,510 - INFO - Database connection established successfully.
+2024-10-07 20:14:16,770 - INFO - User 'Andrea Berg' successfully authenticated.
+2024-10-07 20:14:16,772 - INFO - 127.0.0.1 - - [07/Oct/2024 20:14:16] "[32mPOST /login HTTP/1.1[0m" 302 -
+2024-10-07 20:14:16,777 - INFO - Database connection established successfully.
+2024-10-07 20:14:16,777 - INFO - Displayed streak data for user 1.
+2024-10-07 20:14:16,778 - INFO - 127.0.0.1 - - [07/Oct/2024 20:14:16] "GET / HTTP/1.1" 200 -
+2024-10-07 20:14:16,804 - INFO - 127.0.0.1 - - [07/Oct/2024 20:14:16] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2024-10-07 20:14:24,712 - INFO - 127.0.0.1 - - [07/Oct/2024 20:14:24] "GET /search HTTP/1.1" 200 -
+2024-10-07 20:14:24,736 - INFO - 127.0.0.1 - - [07/Oct/2024 20:14:24] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2024-10-07 20:14:36,587 - INFO - Search query for 'Wirtschaft Florian Homm' returned 10 results.
+2024-10-07 20:14:36,587 - INFO - Successfully retrieved 10 books for query 'Wirtschaft Florian Homm'.
+2024-10-07 20:14:36,587 - INFO - Search query 'Wirtschaft' with topic 'Florian Homm' returned 10 results.
+2024-10-07 20:14:36,618 - INFO - 127.0.0.1 - - [07/Oct/2024 20:14:36] "POST /search HTTP/1.1" 200 -
+2024-10-07 20:14:36,633 - INFO - 127.0.0.1 - - [07/Oct/2024 20:14:36] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2024-10-07 20:14:42,041 - INFO - Loaded favorites from favorites.json.
+2024-10-07 20:14:42,043 - INFO - Book Kopf Geld Jagd added to favorites for user 1.
+2024-10-07 20:14:42,043 - INFO - Added favorite book 'Kopf Geld Jagd' for user 1.
+2024-10-07 20:14:42,043 - INFO - 127.0.0.1 - - [07/Oct/2024 20:14:42] "[32mPOST /add_favorite HTTP/1.1[0m" 302 -
+2024-10-07 20:14:42,056 - INFO - Loaded favorites from favorites.json.
+2024-10-07 20:14:42,057 - INFO - Favorites displayed for user 1 with category filter 'None'.
+2024-10-07 20:14:42,085 - INFO - 127.0.0.1 - - [07/Oct/2024 20:14:42] "GET /favorites HTTP/1.1" 200 -
+2024-10-07 20:14:42,111 - INFO - 127.0.0.1 - - [07/Oct/2024 20:14:42] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2024-10-07 20:14:48,404 - INFO - Loaded favorites from favorites.json.
+2024-10-07 20:14:48,404 - INFO - Favorites displayed for user 1 with category filter 'Biologie'.
+2024-10-07 20:14:48,404 - INFO - 127.0.0.1 - - [07/Oct/2024 20:14:48] "GET /favorites?category=Biologie HTTP/1.1" 200 -
+2024-10-07 20:14:48,420 - INFO - 127.0.0.1 - - [07/Oct/2024 20:14:48] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2024-10-07 20:14:51,770 - INFO - Loaded favorites from favorites.json.
+2024-10-07 20:14:51,770 - INFO - Favorites displayed for user 1 with category filter 'Wirtschaft'.
+2024-10-07 20:14:51,770 - INFO - 127.0.0.1 - - [07/Oct/2024 20:14:51] "GET /favorites?category=Wirtschaft HTTP/1.1" 200 -
+2024-10-07 20:14:51,786 - INFO - 127.0.0.1 - - [07/Oct/2024 20:14:51] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2024-10-07 20:14:57,887 - INFO - Loaded favorites from favorites.json.
+2024-10-07 20:14:57,887 - INFO - Displayed bookmarks for user 1.
+2024-10-07 20:14:57,917 - INFO - 127.0.0.1 - - [07/Oct/2024 20:14:57] "GET /bookmark HTTP/1.1" 200 -
+2024-10-07 20:14:57,947 - INFO - 127.0.0.1 - - [07/Oct/2024 20:14:57] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2024-10-07 20:15:07,300 - INFO - Loaded favorites from favorites.json.
+2024-10-07 20:15:07,301 - INFO - Updated current page to 3 for book Kopf Geld Jagd (ISBN: 9783862484140) for user 1.
+2024-10-07 20:15:07,302 - INFO - Updated page to 3 for book with ISBN 9783862484140 for user 1.
+2024-10-07 20:15:07,339 - INFO - 127.0.0.1 - - [07/Oct/2024 20:15:07] "[35m[1mPOST /update_favorite_page HTTP/1.1[0m" 500 -
+2024-10-07 20:15:07,403 - INFO - 127.0.0.1 - - [07/Oct/2024 20:15:07] "GET /update_favorite_page?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2024-10-07 20:15:07,422 - INFO - 127.0.0.1 - - [07/Oct/2024 20:15:07] "GET /update_favorite_page?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2024-10-07 20:15:07,463 - INFO - 127.0.0.1 - - [07/Oct/2024 20:15:07] "GET /update_favorite_page?__debugger__=yes&cmd=resource&f=console.png&s=jewdDM3QEwm8AmO0Mxsw HTTP/1.1" 200 -
+2024-10-07 20:15:07,493 - INFO - 127.0.0.1 - - [07/Oct/2024 20:15:07] "GET /update_favorite_page?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2024-10-07 20:15:14,827 - INFO - Loaded favorites from favorites.json.
+2024-10-07 20:15:14,828 - INFO - Loaded 2 favorites for user 1.
+2024-10-07 20:15:14,850 - INFO - 127.0.0.1 - - [07/Oct/2024 20:15:14] "GET /learnings HTTP/1.1" 200 -
+2024-10-07 20:15:14,878 - INFO - 127.0.0.1 - - [07/Oct/2024 20:15:14] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2024-10-07 20:15:18,986 - INFO - Loaded favorites from favorites.json.
+2024-10-07 20:15:18,986 - INFO - Updated learning for book Ergebnisse Der Biologie (ISBN: 9783642948053) for user 1.
+2024-10-07 20:15:18,986 - INFO - Saved learning for book with ISBN 9783642948053 for user 1.
+2024-10-07 20:15:18,986 - INFO - 127.0.0.1 - - [07/Oct/2024 20:15:18] "[32mPOST /learnings HTTP/1.1[0m" 302 -
+2024-10-07 20:15:19,002 - INFO - Loaded favorites from favorites.json.
+2024-10-07 20:15:19,002 - INFO - Loaded 2 favorites for user 1.
+2024-10-07 20:15:19,002 - INFO - 127.0.0.1 - - [07/Oct/2024 20:15:19] "GET /learnings HTTP/1.1" 200 -
+2024-10-07 20:15:19,033 - INFO - 127.0.0.1 - - [07/Oct/2024 20:15:19] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2024-10-07 20:15:26,366 - INFO - Database connection established successfully.
+2024-10-07 20:15:26,366 - INFO - Displayed streak data for user 1.
+2024-10-07 20:15:26,366 - INFO - 127.0.0.1 - - [07/Oct/2024 20:15:26] "GET / HTTP/1.1" 200 -
+2024-10-07 20:15:26,397 - INFO - 127.0.0.1 - - [07/Oct/2024 20:15:26] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2024-10-07 20:15:31,012 - INFO - 127.0.0.1 - - [07/Oct/2024 20:15:31] "GET /search HTTP/1.1" 200 -
+2024-10-07 20:15:31,044 - INFO - 127.0.0.1 - - [07/Oct/2024 20:15:31] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2024-10-07 20:15:34,676 - INFO - Loaded favorites from favorites.json.
+2024-10-07 20:15:34,676 - INFO - Displayed bookmarks for user 1.
+2024-10-07 20:15:34,677 - INFO - 127.0.0.1 - - [07/Oct/2024 20:15:34] "GET /bookmark HTTP/1.1" 200 -
+2024-10-07 20:15:34,706 - INFO - 127.0.0.1 - - [07/Oct/2024 20:15:34] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2024-10-07 20:15:40,154 - INFO - Loaded favorites from favorites.json.
+2024-10-07 20:15:40,154 - INFO - Displayed bookmarks for user 1.
+2024-10-07 20:15:40,155 - INFO - 127.0.0.1 - - [07/Oct/2024 20:15:40] "GET /bookmark HTTP/1.1" 200 -
+2024-10-07 20:15:40,189 - INFO - 127.0.0.1 - - [07/Oct/2024 20:15:40] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2024-10-07 20:15:41,427 - INFO - Loaded favorites from favorites.json.
+2024-10-07 20:15:41,427 - INFO - Loaded 2 favorites for user 1.
+2024-10-07 20:15:41,428 - INFO - 127.0.0.1 - - [07/Oct/2024 20:15:41] "GET /learnings HTTP/1.1" 200 -
+2024-10-07 20:15:41,458 - INFO - 127.0.0.1 - - [07/Oct/2024 20:15:41] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2024-10-07 20:15:43,502 - INFO - Loaded favorites from favorites.json.
+2024-10-07 20:15:43,503 - INFO - Displayed bookmarks for user 1.
+2024-10-07 20:15:43,504 - INFO - 127.0.0.1 - - [07/Oct/2024 20:15:43] "GET /bookmark HTTP/1.1" 200 -
+2024-10-07 20:15:43,539 - INFO - 127.0.0.1 - - [07/Oct/2024 20:15:43] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2024-10-07 20:15:44,531 - INFO - Database connection established successfully.
+2024-10-07 20:15:44,532 - INFO - Displayed streak data for user 1.
+2024-10-07 20:15:44,533 - INFO - 127.0.0.1 - - [07/Oct/2024 20:15:44] "GET / HTTP/1.1" 200 -
+2024-10-07 20:15:44,569 - INFO - 127.0.0.1 - - [07/Oct/2024 20:15:44] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2024-10-07 20:15:47,240 - INFO - 127.0.0.1 - - [07/Oct/2024 20:15:47] "GET /search HTTP/1.1" 200 -
+2024-10-07 20:15:47,280 - INFO - 127.0.0.1 - - [07/Oct/2024 20:15:47] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2024-10-07 20:15:48,391 - INFO - Loaded favorites from favorites.json.
+2024-10-07 20:15:48,392 - INFO - Favorites displayed for user 1 with category filter 'None'.
+2024-10-07 20:15:48,393 - INFO - 127.0.0.1 - - [07/Oct/2024 20:15:48] "GET /favorites HTTP/1.1" 200 -
+2024-10-07 20:15:48,422 - INFO - 127.0.0.1 - - [07/Oct/2024 20:15:48] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2024-10-07 20:15:50,039 - INFO - Loaded favorites from favorites.json.
+2024-10-07 20:15:50,039 - INFO - Displayed bookmarks for user 1.
+2024-10-07 20:15:50,040 - INFO - 127.0.0.1 - - [07/Oct/2024 20:15:50] "GET /bookmark HTTP/1.1" 200 -
+2024-10-07 20:15:50,072 - INFO - 127.0.0.1 - - [07/Oct/2024 20:15:50] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2024-10-07 20:15:56,583 - INFO - Loaded favorites from favorites.json.
+2024-10-07 20:15:56,584 - INFO - Updated current page to 3 for book Kopf Geld Jagd (ISBN: 9783862484140) for user 1.
+2024-10-07 20:15:56,586 - INFO - Updated page to 3 for book with ISBN 9783862484140 for user 1.
+2024-10-07 20:15:56,594 - INFO - 127.0.0.1 - - [07/Oct/2024 20:15:56] "[35m[1mPOST /update_favorite_page HTTP/1.1[0m" 500 -
+2024-10-07 20:15:56,621 - INFO - 127.0.0.1 - - [07/Oct/2024 20:15:56] "[36mGET /update_favorite_page?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-10-07 20:15:56,627 - INFO - 127.0.0.1 - - [07/Oct/2024 20:15:56] "[36mGET /update_favorite_page?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-10-07 20:15:56,654 - INFO - 127.0.0.1 - - [07/Oct/2024 20:15:56] "[36mGET /update_favorite_page?__debugger__=yes&cmd=resource&f=console.png&s=jewdDM3QEwm8AmO0Mxsw HTTP/1.1[0m" 304 -
+2024-10-07 20:24:47,939 - INFO -  * Detected change in 'c:\\Users\\CL921RQ\\.vscode\\self_learning\\1\\app.py', reloading
+2024-10-07 20:24:48,009 - INFO -  * Restarting with stat
+2024-10-07 20:24:49,550 - WARNING -  * Debugger is active!
+2024-10-07 20:24:49,556 - INFO -  * Debugger PIN: 710-992-536
+2024-10-07 20:24:54,272 - INFO - Loaded favorites from favorites.json.
+2024-10-07 20:24:54,273 - INFO - Updated current page to 3 for book Kopf Geld Jagd (ISBN: 9783862484140) for user 1.
+2024-10-07 20:24:54,275 - INFO - Updated page to 3 for book with ISBN 9783862484140 for user 1.
+2024-10-07 20:24:54,277 - INFO - Database connection established successfully.
+2024-10-07 20:24:54,291 - INFO - User 1 streak updated: Current streak is 1, Longest streak is 1, Status: unchanged.
+2024-10-07 20:24:54,295 - INFO - Loaded favorites from favorites.json.
+2024-10-07 20:24:54,295 - INFO - Loaded 2 favorites for user 1.
+2024-10-07 20:24:54,355 - INFO - 127.0.0.1 - - [07/Oct/2024 20:24:54] "POST /update_favorite_page HTTP/1.1" 200 -
+2024-10-07 20:24:54,455 - INFO - 127.0.0.1 - - [07/Oct/2024 20:24:54] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2024-10-07 20:24:58,826 - INFO - Loaded favorites from favorites.json.
+2024-10-07 20:24:58,826 - INFO - Updated current page to 4 for book Kopf Geld Jagd (ISBN: 9783862484140) for user 1.
+2024-10-07 20:24:58,828 - INFO - Updated page to 4 for book with ISBN 9783862484140 for user 1.
+2024-10-07 20:24:58,829 - INFO - Database connection established successfully.
+2024-10-07 20:24:58,830 - INFO - User 1 streak updated: Current streak is 1, Longest streak is 1, Status: unchanged.
+2024-10-07 20:24:58,846 - INFO - Loaded favorites from favorites.json.
+2024-10-07 20:24:58,847 - INFO - Loaded 2 favorites for user 1.
+2024-10-07 20:24:58,848 - INFO - 127.0.0.1 - - [07/Oct/2024 20:24:58] "POST /update_favorite_page HTTP/1.1" 200 -
+2024-10-07 20:24:58,882 - INFO - 127.0.0.1 - - [07/Oct/2024 20:24:58] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2024-10-07 20:25:04,756 - INFO - Database connection established successfully.
+2024-10-07 20:25:04,757 - INFO - Displayed streak data for user 1.
+2024-10-07 20:25:04,778 - INFO - 127.0.0.1 - - [07/Oct/2024 20:25:04] "GET / HTTP/1.1" 200 -
+2024-10-07 20:25:04,814 - INFO - 127.0.0.1 - - [07/Oct/2024 20:25:04] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2024-10-07 20:25:06,371 - INFO - Loaded favorites from favorites.json.
+2024-10-07 20:25:06,371 - INFO - Displayed bookmarks for user 1.
+2024-10-07 20:25:06,372 - INFO - 127.0.0.1 - - [07/Oct/2024 20:25:06] "GET /bookmark HTTP/1.1" 200 -
+2024-10-07 20:25:06,411 - INFO - 127.0.0.1 - - [07/Oct/2024 20:25:06] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2024-10-07 20:25:08,202 - INFO - Loaded favorites from favorites.json.
+2024-10-07 20:25:08,202 - INFO - Loaded 2 favorites for user 1.
+2024-10-07 20:25:08,227 - INFO - 127.0.0.1 - - [07/Oct/2024 20:25:08] "GET /learnings HTTP/1.1" 200 -
+2024-10-07 20:25:08,261 - INFO - 127.0.0.1 - - [07/Oct/2024 20:25:08] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2024-10-07 21:35:19,410 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-10-07 21:35:19,410 - INFO - [33mPress CTRL+C to quit[0m
+2024-10-07 21:35:19,410 - INFO -  * Restarting with stat
+2024-10-07 21:35:21,372 - WARNING -  * Debugger is active!
+2024-10-07 21:35:21,380 - INFO -  * Debugger PIN: 710-992-536
+2024-10-07 21:35:31,225 - INFO - Database connection established successfully.
+2024-10-07 21:35:31,225 - INFO - Displayed streak data for user 1.
+2024-10-07 21:35:31,305 - INFO - 127.0.0.1 - - [07/Oct/2024 21:35:31] "GET / HTTP/1.1" 200 -
+2024-10-07 21:35:31,452 - INFO - 127.0.0.1 - - [07/Oct/2024 21:35:31] "GET /static/styles.css HTTP/1.1" 200 -
+2024-10-07 21:35:31,551 - INFO - 127.0.0.1 - - [07/Oct/2024 21:35:31] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-10-07 21:35:34,975 - INFO - Loaded favorites from favorites.json.
+2024-10-07 21:35:34,991 - INFO - Loaded 2 favorites for user 1.
+2024-10-07 21:35:35,006 - INFO - 127.0.0.1 - - [07/Oct/2024 21:35:35] "GET /learnings HTTP/1.1" 200 -
+2024-10-07 21:35:35,022 - INFO - 127.0.0.1 - - [07/Oct/2024 21:35:35] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2024-10-07 21:35:39,187 - INFO - Loaded favorites from favorites.json.
+2024-10-07 21:35:39,187 - INFO - Displayed bookmarks for user 1.
+2024-10-07 21:35:39,203 - INFO - 127.0.0.1 - - [07/Oct/2024 21:35:39] "GET /bookmark HTTP/1.1" 200 -
+2024-10-07 21:35:39,234 - INFO - 127.0.0.1 - - [07/Oct/2024 21:35:39] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2024-10-07 21:35:43,160 - INFO - Loaded favorites from favorites.json.
+2024-10-07 21:35:43,160 - INFO - Updated current page to 5 for book Kopf Geld Jagd (ISBN: 9783862484140) for user 1.
+2024-10-07 21:35:43,160 - INFO - Updated page to 5 for book with ISBN 9783862484140 for user 1.
+2024-10-07 21:35:43,160 - INFO - Database connection established successfully.
+2024-10-07 21:35:43,160 - INFO - User 1 streak updated: Current streak is 1, Longest streak is 1, Status: unchanged.
+2024-10-07 21:35:43,175 - INFO - Loaded favorites from favorites.json.
+2024-10-07 21:35:43,175 - INFO - Loaded 2 favorites for user 1.
+2024-10-07 21:35:43,175 - INFO - 127.0.0.1 - - [07/Oct/2024 21:35:43] "POST /update_favorite_page HTTP/1.1" 200 -
+2024-10-07 21:35:43,191 - INFO - 127.0.0.1 - - [07/Oct/2024 21:35:43] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2024-10-07 21:35:45,417 - INFO - Loaded favorites from favorites.json.
+2024-10-07 21:35:45,417 - INFO - Updated current page to 5 for book Kopf Geld Jagd (ISBN: 9783862484140) for user 1.
+2024-10-07 21:35:45,417 - INFO - Updated page to 5 for book with ISBN 9783862484140 for user 1.
+2024-10-07 21:35:45,417 - INFO - Database connection established successfully.
+2024-10-07 21:35:45,417 - INFO - User 1 streak updated: Current streak is 1, Longest streak is 1, Status: unchanged.
+2024-10-07 21:35:45,432 - INFO - Loaded favorites from favorites.json.
+2024-10-07 21:35:45,432 - INFO - Loaded 2 favorites for user 1.
+2024-10-07 21:35:45,432 - INFO - 127.0.0.1 - - [07/Oct/2024 21:35:45] "POST /update_favorite_page HTTP/1.1" 200 -
+2024-10-07 21:35:45,448 - INFO - 127.0.0.1 - - [07/Oct/2024 21:35:45] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2024-10-07 21:35:51,582 - INFO - Loaded favorites from favorites.json.
+2024-10-07 21:35:51,590 - INFO - Updated current page to 5 for book Ergebnisse Der Biologie (ISBN: 9783642948053) for user 1.
+2024-10-07 21:35:51,590 - INFO - Updated page to 5 for book with ISBN 9783642948053 for user 1.
+2024-10-07 21:35:51,590 - INFO - Database connection established successfully.
+2024-10-07 21:35:51,590 - INFO - User 1 streak updated: Current streak is 1, Longest streak is 1, Status: unchanged.
+2024-10-07 21:35:51,599 - INFO - Loaded favorites from favorites.json.
+2024-10-07 21:35:51,599 - INFO - Loaded 2 favorites for user 1.
+2024-10-07 21:35:51,599 - INFO - 127.0.0.1 - - [07/Oct/2024 21:35:51] "POST /update_favorite_page HTTP/1.1" 200 -
+2024-10-07 21:35:51,640 - INFO - 127.0.0.1 - - [07/Oct/2024 21:35:51] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2024-10-07 21:35:55,833 - INFO - Loaded favorites from favorites.json.
+2024-10-07 21:35:55,833 - INFO - Updated current page to 5 for book Ergebnisse Der Biologie (ISBN: 9783642948053) for user 1.
+2024-10-07 21:35:55,833 - INFO - Updated page to 5 for book with ISBN 9783642948053 for user 1.
+2024-10-07 21:35:55,833 - INFO - Database connection established successfully.
+2024-10-07 21:35:55,833 - INFO - User 1 streak updated: Current streak is 1, Longest streak is 1, Status: unchanged.
+2024-10-07 21:35:55,848 - INFO - Loaded favorites from favorites.json.
+2024-10-07 21:35:55,848 - INFO - Loaded 2 favorites for user 1.
+2024-10-07 21:35:55,848 - INFO - 127.0.0.1 - - [07/Oct/2024 21:35:55] "POST /update_favorite_page HTTP/1.1" 200 -
+2024-10-07 21:35:55,875 - INFO - 127.0.0.1 - - [07/Oct/2024 21:35:55] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -

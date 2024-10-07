@@ -50,7 +50,16 @@
             "isbn": "9783642948053",
             "publication_year": "2013-03-13",
             "category": "Biologie",
-            "current_page": 1
+            "current_page": 5,
+            "learning": "ggfb"
+        },
+        {
+            "title": "Kopf Geld Jagd",
+            "author": "Florian Homm",
+            "isbn": "9783862484140",
+            "publication_year": "2012-11-06",
+            "category": "Wirtschaft",
+            "current_page": 5
         }
     ]
 }
