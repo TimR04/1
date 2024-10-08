@@ -59,7 +59,22 @@
             "isbn": "9783862484140",
             "publication_year": "2012-11-06",
             "category": "Wirtschaft",
-            "current_page": 5
+            "current_page": 6
+        },
+        {
+            "title": "Intelligent investieren",
+            "author": "Benjamin Graham",
+            "isbn": "3898790649",
+            "publication_year": "2005",
+            "category": "Wirtschaft",
+            "current_page": 4
+        },
+        {
+            "title": "ZUSAMMENFASSUNG - The Intelligent Investor / Der intelligente Investor: Das endg\u00fcltige Buch \u00fcber Value Investing. Ein Buch mit praktischen Ratschl\u00e4gen von Benjamin Graham und Jason Zweig",
+            "author": "Shortcut Edition",
+            "isbn": "N/A",
+            "publication_year": "N/A",
+            "category": "Wirtschaft"
         }
     ]
 }

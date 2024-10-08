@@ -16,7 +16,6 @@ from flask import Flask, render_template, request, redirect, session, url_for
 from flask.cli import load_dotenv
 from backend import database, google_books_api, json_storage
 import logging
-import bcrypt
 
 load_dotenv()
 
