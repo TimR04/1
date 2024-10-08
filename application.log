@@ -2192,3 +2192,49 @@
 2024-10-08 12:36:19,766 - INFO - Loaded 4 favorites for user 1.
 2024-10-08 12:36:19,785 - INFO - 127.0.0.1 - - [08/Oct/2024 12:36:19] "GET /learnings HTTP/1.1" 200 -
 2024-10-08 12:36:19,810 - INFO - 127.0.0.1 - - [08/Oct/2024 12:36:19] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2024-10-08 12:39:23,862 - INFO - Loaded favorites from favorites.json.
+2024-10-08 12:39:23,862 - INFO - Displayed bookmarks for user 1.
+2024-10-08 12:39:23,863 - INFO - 127.0.0.1 - - [08/Oct/2024 12:39:23] "GET /bookmark HTTP/1.1" 200 -
+2024-10-08 12:39:23,907 - INFO - 127.0.0.1 - - [08/Oct/2024 12:39:23] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2024-10-08 12:39:24,611 - INFO - Loaded favorites from favorites.json.
+2024-10-08 12:39:24,612 - INFO - Favorites displayed for user 1 with category filter 'None'.
+2024-10-08 12:39:24,613 - INFO - 127.0.0.1 - - [08/Oct/2024 12:39:24] "GET /favorites HTTP/1.1" 200 -
+2024-10-08 12:39:24,660 - INFO - 127.0.0.1 - - [08/Oct/2024 12:39:24] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2024-10-08 12:39:25,911 - INFO - 127.0.0.1 - - [08/Oct/2024 12:39:25] "GET /search HTTP/1.1" 200 -
+2024-10-08 12:39:25,946 - INFO - 127.0.0.1 - - [08/Oct/2024 12:39:25] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2024-10-08 12:39:27,043 - INFO - Database connection established successfully.
+2024-10-08 12:39:27,044 - INFO - Displayed streak data for user 1.
+2024-10-08 12:39:27,045 - INFO - 127.0.0.1 - - [08/Oct/2024 12:39:27] "GET / HTTP/1.1" 200 -
+2024-10-08 12:39:27,087 - INFO - 127.0.0.1 - - [08/Oct/2024 12:39:27] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2024-10-08 12:40:09,229 - INFO - Loaded favorites from favorites.json.
+2024-10-08 12:40:09,229 - INFO - Displayed bookmarks for user 1.
+2024-10-08 12:40:09,229 - INFO - 127.0.0.1 - - [08/Oct/2024 12:40:09] "GET /bookmark HTTP/1.1" 200 -
+2024-10-08 12:40:09,259 - INFO - 127.0.0.1 - - [08/Oct/2024 12:40:09] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2024-10-08 12:40:14,423 - INFO - Loaded favorites from favorites.json.
+2024-10-08 12:40:14,424 - INFO - Updated current page to 4 for book Intelligent investieren (ISBN: 3898790649) for user 1.
+2024-10-08 12:40:14,426 - INFO - Updated page to 4 for book with ISBN 3898790649 for user 1.
+2024-10-08 12:40:14,427 - INFO - Database connection established successfully.
+2024-10-08 12:40:14,434 - INFO - User 1 streak updated: Current streak is 2, Longest streak is 2, Status: unchanged.
+2024-10-08 12:40:14,450 - INFO - Loaded favorites from favorites.json.
+2024-10-08 12:40:14,451 - INFO - Loaded 4 favorites for user 1.
+2024-10-08 12:40:14,452 - INFO - 127.0.0.1 - - [08/Oct/2024 12:40:14] "POST /update_favorite_page HTTP/1.1" 200 -
+2024-10-08 12:40:14,485 - INFO - 127.0.0.1 - - [08/Oct/2024 12:40:14] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2024-10-08 12:40:26,159 - INFO - Loaded favorites from favorites.json.
+2024-10-08 12:40:26,160 - INFO - Updated current page to 4 for book Intelligent investieren (ISBN: 3898790649) for user 1.
+2024-10-08 12:40:26,162 - INFO - Updated page to 4 for book with ISBN 3898790649 for user 1.
+2024-10-08 12:40:26,163 - INFO - Database connection established successfully.
+2024-10-08 12:40:26,164 - INFO - User 1 streak updated: Current streak is 2, Longest streak is 2, Status: unchanged.
+2024-10-08 12:40:26,168 - INFO - Loaded favorites from favorites.json.
+2024-10-08 12:40:26,168 - INFO - Loaded 4 favorites for user 1.
+2024-10-08 12:40:26,170 - INFO - 127.0.0.1 - - [08/Oct/2024 12:40:26] "POST /update_favorite_page HTTP/1.1" 200 -
+2024-10-08 12:40:26,210 - INFO - 127.0.0.1 - - [08/Oct/2024 12:40:26] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2024-10-08 12:40:27,501 - INFO - Loaded favorites from favorites.json.
+2024-10-08 12:40:27,502 - INFO - Displayed bookmarks for user 1.
+2024-10-08 12:40:27,503 - INFO - 127.0.0.1 - - [08/Oct/2024 12:40:27] "GET /bookmark HTTP/1.1" 200 -
+2024-10-08 12:40:27,552 - INFO - 127.0.0.1 - - [08/Oct/2024 12:40:27] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2024-10-08 12:40:29,020 - INFO - Loaded favorites from favorites.json.
+2024-10-08 12:40:29,020 - INFO - Favorites displayed for user 1 with category filter 'None'.
+2024-10-08 12:40:29,021 - INFO - 127.0.0.1 - - [08/Oct/2024 12:40:29] "GET /favorites HTTP/1.1" 200 -
+2024-10-08 12:40:29,055 - INFO - 127.0.0.1 - - [08/Oct/2024 12:40:29] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2024-10-08 12:40:30,336 - INFO - 127.0.0.1 - - [08/Oct/2024 12:40:30] "GET /search HTTP/1.1" 200 -
+2024-10-08 12:40:30,374 - INFO - 127.0.0.1 - - [08/Oct/2024 12:40:30] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
