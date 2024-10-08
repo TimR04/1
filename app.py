@@ -11,16 +11,17 @@ Version: 0.1.0 (major.minor.bugfix)
 License: Free
 """
 
-import os
+
 from flask import Flask, render_template, request, redirect, session, url_for
 from flask.cli import load_dotenv
 from backend import database, google_books_api, json_storage
 import logging
 
-load_dotenv()
+
 
 app = Flask(__name__)
-app.secret_key = os.getenv('SECRET_KEY')
+"""We used one static hardcoded key, for developing reasons"""
+app.secret_key = ('VJ8_zl5jBLD2Rh0KM9M8xv1S7Jh7-UzXGvHb0ljhA1x7x3u4a6mA')
 
 # Set up logging configuration
 logging.basicConfig(filename='application.log', 
@@ -178,7 +179,6 @@ def remove_favorites_view():
         return redirect(url_for('favorites'))
     logging.warning("Unauthorized attempt to remove favorites.")
     return redirect(url_for('login'))
-
 
 @app.route('/add_favorite', methods=['POST'])
 def add_favorite():

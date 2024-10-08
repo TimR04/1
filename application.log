@@ -2238,3 +2238,28 @@
 2024-10-08 12:40:29,055 - INFO - 127.0.0.1 - - [08/Oct/2024 12:40:29] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
 2024-10-08 12:40:30,336 - INFO - 127.0.0.1 - - [08/Oct/2024 12:40:30] "GET /search HTTP/1.1" 200 -
 2024-10-08 12:40:30,374 - INFO - 127.0.0.1 - - [08/Oct/2024 12:40:30] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2024-10-08 16:23:45,835 - INFO - Database connection established successfully.
+2024-10-08 16:23:45,839 - INFO - Table 'users' created or already exists.
+2024-10-08 16:25:51,825 - INFO - Database connection established successfully.
+2024-10-08 16:25:51,836 - INFO - Table 'users' created or already exists.
+2024-10-08 16:26:17,666 - WARNING - Python-dotenv could not parse statement starting at line 1
+2024-10-08 16:26:17,672 - WARNING - Python-dotenv could not parse statement starting at line 1
+2024-10-08 16:26:17,724 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-10-08 16:26:17,724 - INFO - [33mPress CTRL+C to quit[0m
+2024-10-08 16:26:17,726 - INFO -  * Restarting with stat
+2024-10-08 16:26:18,486 - WARNING - Python-dotenv could not parse statement starting at line 1
+2024-10-08 16:26:18,491 - WARNING - Python-dotenv could not parse statement starting at line 1
+2024-10-08 16:26:18,511 - WARNING -  * Debugger is active!
+2024-10-08 16:26:18,522 - INFO -  * Debugger PIN: 710-992-536
+2024-10-08 16:26:26,754 - INFO - Homepage accessed without login.
+2024-10-08 16:26:26,814 - INFO - 127.0.0.1 - - [08/Oct/2024 16:26:26] "GET / HTTP/1.1" 200 -
+2024-10-08 16:26:26,934 - INFO - 127.0.0.1 - - [08/Oct/2024 16:26:26] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2024-10-08 16:26:27,042 - INFO - 127.0.0.1 - - [08/Oct/2024 16:26:27] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-10-08 16:26:28,927 - INFO - 127.0.0.1 - - [08/Oct/2024 16:26:28] "GET /register HTTP/1.1" 200 -
+2024-10-08 16:26:29,021 - INFO - 127.0.0.1 - - [08/Oct/2024 16:26:29] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2024-10-08 16:26:30,656 - INFO - Database connection established successfully.
+2024-10-08 16:26:30,665 - INFO - User 'Andrea Berg' successfully registered.
+2024-10-08 16:26:30,665 - INFO - 127.0.0.1 - - [08/Oct/2024 16:26:30] "[32mPOST /register HTTP/1.1[0m" 302 -
+2024-10-08 16:26:30,679 - INFO - 127.0.0.1 - - [08/Oct/2024 16:26:30] "GET /login HTTP/1.1" 200 -
+2024-10-08 16:26:30,698 - INFO - 127.0.0.1 - - [08/Oct/2024 16:26:30] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
