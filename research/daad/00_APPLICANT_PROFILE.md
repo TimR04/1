@@ -31,7 +31,9 @@
 - Consulting, strategy and transaction-related work
 - EY / EY-Parthenon
 - International experience including Singapore
-- BCG internship planned
+- **BCG internship confirmed for January (start of year), in the Digital & Tech practice, serving the Industrial Goods sector**
+  - NOTE FOR ALL AGENTS: this is the single most direct professional bridge in the profile between the applicant's consulting background and the Industrial Systems / Digital Manufacturing target. Treat it as load-bearing for the narrative chain, not as one internship among others.
+  - It is FORWARD-DATED relative to the DAAD application: check whether and how a not-yet-completed internship may be presented (CV convention for future/confirmed positions; credibility risk of leaning on unfinished work).
 - Experience with AI, analytics and digital transformation
 
 ## Emerging academic / career interest
