@@ -73,11 +73,13 @@ including automotive-sector projects in APAC and the Middle East."
 
 | Item | CV says | Task description says | Status |
 |---|---|---|---|
-| SG Kirchen-Hausen role | "Executive Chair" | "Second Chair / Vice Chair" | **CONTRADICTION — applicant must resolve** |
-| Jugendclub role | "Chair" | "Treasurer" (manages ~EUR 40k) | **CONTRADICTION — applicant must resolve** |
+| SG Kirchen-Hausen role | "Executive Chair" | "Second Chair / Vice Chair" | **RESOLVED 2026-09-17 → use CV: Executive Chair** |
+| Jugendclub role | "Chair" | "Treasurer" (manages ~EUR 40k) | **RESOLVED 2026-09-17 → use CV: Chair** |
 | Fishing club | absent | Youth officer, youth days ~every 3 weeks | On profile only; CV lists fishing as a hobby |
 | SG scale | not quantified | 463 members, ~6 events/yr, 700+ attendee theatre | Quantification exists but is unused on the CV |
 | BCG | absent | Confirmed, January, Digital & Tech / Industrial Goods | Not yet on CV |
+
+> Resolutions and the Sep 2026 – Oct 2027 timeline: see `02_RESOLUTIONS_AND_TIMELINE.md`.
 
 # FACTS THE CV ADDS that the task description did not state
 - Name, location: Tim Rösch, Stuttgart
