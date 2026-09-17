@@ -55,10 +55,9 @@ Notes for downstream agents:
   Corroboration: two independent WebSearch passes over www2.daad.de programme page 57503584,
   plus the Uni Potsdam DAAD-Auslandsstipendien 2026/2027 overview PDF. Classification: **B**
   (search-extracted; the page itself could not be opened — see egress note).
-- **UNVERIFIED and decisive:** whether DAAD places the **United Kingdom** in the "Westeuropa"
-  deadline group. Not confirmed against a DAAD country list. If the UK sits in a different
-  group, the deadline differs. **This single fact must be verified by the applicant directly
-  on daad.de / the DAAD portal — it cannot be verified from this session.**
+- **RESOLVED 2026-09-17 — the applicant verified this directly on DAAD's own pages: the UK
+  deadline IS 25 September 2026.** The regional-group question is closed. Eight days remain
+  from the date of this note. Classification upgraded to **A (applicant-verified at source)**.
 - **DAAD does not require a Cambridge offer at application** (A): admission may be submitted
   later, by the time the scholarship starts. So the DAAD application is not blocked by
   Cambridge's own timeline.
