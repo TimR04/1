@@ -9,13 +9,21 @@
 | Unternehmen | Benz Holz |
 | Inhaber | Thomas Benz (Alleinunternehmer, seit über 20 Jahren im Geschäft) |
 | Branche | Handel mit Brennholz, Briketts und Pellets |
-| Standort / Lager | Kirchenhausen, 78187 Geisingen (Landkreis Tuttlingen) · `[OFFEN: Straße, Hausnummer]` |
+| Standort / Lager | Donautalstraße 2, 78187 Geisingen-Kirchen-Hausen (Landkreis Tuttlingen) |
 | Liefergebiet | ca. 100 km Umkreis um Kirchenhausen, nur Baden-Württemberg |
-| Kontakt | benz-holz@t-online.de · `[OFFEN: Telefonnummer]` |
-| Wunsch-Domain | benz-holz.de (noch nicht registriert) |
+| Kontakt | Tel. 07704 1310 · Fax 07704 6115 · benz-holz@t-online.de · `[OFFEN: Mobilnummer? Branchenbuch nennt „07704/6685“]` |
+| Domain | benz-holz.de existiert bereits (alte Website). Neue Seite soll sie übernehmen. |
 | Sprache / Ansprache | Deutsch, du |
 | Markenwirkung | ruhig, selbstbewusst |
 | Logo | existiert nicht, wird erstellt |
+
+## 1a. Aus der alten Website (benz-holz.de, via Suchmaschinen-Auszüge)
+
+- Claim bisher: „Ihre freundliche Wärmequelle aus Kirchen-Hausen“
+- Weitere Produkte auf der alten Seite: **Rindenbriketts**, **Kachelofenholz**, Bio-Holzpellets. `[OFFEN: noch im Sortiment? Preise?]`
+- Argumente der alten Seite: sauber, umweltfreundlich, kein Schmutz und kein Staub, gutes Preis-Leistungs-Verhältnis
+- Preise werden ab Kirchen-Hausen berechnet. Selbstabholung ging bisher über einen Hinweis im Bestellformular.
+- Die alte Seite hatte bereits einen Online-Shop mit Bestellformular.
 
 ## 2. Zielgruppe
 
@@ -83,12 +91,12 @@ Hinweis: Die Palettenpreise für Briketts und Pellets entsprechen genau Stückza
 - **Headline:** Warm durch den Winter.
 - **Subline:** Buchenholz, Briketts und Pellets, direkt von Thomas Benz. Seit über 20 Jahren geliefert bis vor deine Tür, im Umkreis von 100 km.
 - **CTA primär:** Jetzt bestellen
-- **CTA sekundär:** Lieber anrufen: `[Telefon]`
+- **CTA sekundär:** Lieber anrufen: 07704 1310
 - **Trust-Zeile:** Über 20 Jahre · Lieferung frei Haus · Zahlung auf Rechnung
 
 ### Leistungen (Sortiment)
 - **Headline:** Alles, was dein Ofen braucht.
-- **Intro:** Trocken, sauber gestapelt und zu Preisen, die du vorher kennst. Du holst es ab, oder wir bringen es dir.
+- **Intro:** Trocken, sauber, ohne Staub und Dreck im Haus, und zu Preisen, die du vorher kennst. Du holst es ab, oder wir bringen es dir.
 - **Kaminholz Buche:** Getrocknete Buche, sauber im Gestell auf der Europalette, 1,80 m hoch. In 33 oder 25 cm Scheitlänge, passend für deinen Ofen. Ab 385 € frei Haus.
 - **Hartholz-Briketts:** Gepresste Buche mit 85 mm Durchmesser, brennt lange und gleichmäßig. Foliert in handlichen 10-kg-Paketen. Ab 5 € pro Paket.
 - **Holzpellets:** 6 mm, in 15-kg-Säcken für deine Pelletheizung oder deinen Pelletofen. Ab 9,90 € pro Sack.
@@ -119,7 +127,7 @@ Hinweis: Die Palettenpreise für Briketts und Pellets entsprechen genau Stückza
 ## 10. Rechtliches
 
 Ein Online-Shop braucht Impressum, Datenschutzerklärung, AGB und Widerrufsbelehrung. Entwürfe werden erstellt, sollten aber vor dem Livegang von einem Fachmann geprüft werden, zum Beispiel über einen Rechtstext-Dienst der IHK oder von Händlerbund bzw. IT-Recht Kanzlei.
-`[OFFEN: vollständige Anschrift, USt-IdNr. oder Steuernummer]`
+Anschrift: Thomas Benz, Donautalstraße 2, 78187 Geisingen. `[OFFEN: USt-IdNr. oder Steuernummer]`
 
 ## 11. Bilder
 
