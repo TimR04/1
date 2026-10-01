@@ -94,9 +94,9 @@ def kosten_monat(o, sz, miete):
         if o.get("hausgeld_nu") is not None:   # bekannter nicht umlagef. Anteil inkl. Rücklage
             hg_nu = o["hausgeld_nu"]
         else:
-            hg_nu = p["etw_verwaltung"] + wfl * p["etw_ruecklage_qm"]
+            hg_nu = o.get("einheiten", 1) * p["etw_verwaltung"] + wfl * p["etw_ruecklage_qm"]
         inst = wfl * p["etw_inst_se_qm"]
-        verw = p["etw_sev"]
+        verw = o.get("einheiten", 1) * p["etw_sev"]
         sonst = 0
     else:
         hg_nu = 0
@@ -164,9 +164,30 @@ def max_kaufpreise(o, sz="B", ziel_cf=100):
     return res
 
 
+def verhandlung(o):
+    """Inseratspreis vs. vertretbare Preise; CF-Tests im konservativen Szenario A, Renditen auf Base-Miete."""
+    b = max_kaufpreise(o, "B")
+    a = max_kaufpreise(o, "A")
+    res = {
+        "inserat": o["preis"],
+        "p6": b["brutto_6"], "p7": b["brutto_7"], "p8": b["brutto_8"], "p9": b["brutto_9"],
+        "cf0_F2_A": a["cf0_F2"], "cf100_F2_A": a["cf100_F2"], "cf0_F1_B": b["cf0_F1"],
+        "ek_grenze": b["ek_grenze"],
+    }
+    res["interessant_ab"] = min(res["p6"], res["cf0_F2_A"], res["ek_grenze"])
+    res["sehr_attraktiv_ab"] = min(res["p7"], res["cf100_F2_A"], res["ek_grenze"])
+    return res
+
+
+def fmt1(x):
+    return f"{x:.1f}".replace(".", ",")
+
+
 def eur(x, nd=0):
     if x is None or (isinstance(x, float) and math.isnan(x)):
         return "n.a."
+    if abs(x) < 0.5:
+        x = 0
     s = f"{x:,.{nd}f}".replace(",", "X").replace(".", ",").replace("X", ".")
     return s + " €"
 
@@ -211,8 +232,17 @@ def main():
     for o in objekte:
         a, b = kennzahlen(o, "A"), kennzahlen(o, "B")
         print(f"| {o['id']} | {o['name']} | {eur(o['preis'])} | {eur(b['miete'])} | {pct(b['brutto'],2)} | "
-              f"{b['faktor']:.1f} | {eur(b['noi'])} | {eur(a['F1']['cf'])} / {eur(b['F1']['cf'])} | "
+              f"{fmt1(b['faktor'])} | {eur(b['noi'])} | {eur(a['F1']['cf'])} / {eur(b['F1']['cf'])} | "
               f"{eur(a['F2']['cf'])} / {eur(b['F2']['cf'])} | {eur(b['ek'])} | {'ja' if b['ek_ok'] else 'NEIN'} |")
+    if "--verhandlung" in sys.argv:
+        print("\n| ID | Inserat | 6 % brutto | 7 % | 8 % | 9 % | CF 0 bei F2 (Szen. A) | CF +100 bei F2 (A) | CF 0 bei F1 (B) | EK-Grenze | **Interessant ab** | **Sehr attraktiv ab** |")
+        print("|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|")
+        for o in objekte:
+            v = verhandlung(o)
+            r = lambda x: eur(round(x / 1000) * 1000)
+            print(f"| {o['id']} | {eur(v['inserat'])} | {r(v['p6'])} | {r(v['p7'])} | {r(v['p8'])} | {r(v['p9'])} | "
+                  f"{r(v['cf0_F2_A'])} | {r(v['cf100_F2_A'])} | {r(v['cf0_F1_B'])} | {r(v['ek_grenze'])} | "
+                  f"**{r(v['interessant_ab'])}** | **{r(v['sehr_attraktiv_ab'])}** |")
     if detail:
         for o in objekte:
             print(f"\n### {o['id']} – {o['name']}\n")

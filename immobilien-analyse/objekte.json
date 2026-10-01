@@ -1,0 +1,164 @@
+[
+  {
+    "id": "K1",
+    "name": "Tuttlingen Zentrum, 4,5-Zi-ETW 92 m²",
+    "typ": "ETW",
+    "preis": 169000,
+    "wfl": 92,
+    "einheiten": 1,
+    "makler_pct": 0.0357,
+    "reno": 2000,
+    "hausgeld_nu": null,
+    "miete": {
+      "A": 828,
+      "B": 897,
+      "C": 943
+    },
+    "quelle": "https://www.kleinanzeigen.de/s-anzeige/3315810682",
+    "annahmen": "Leer/bezugsfrei (verfügbar nach Vereinbarung). Miete A 9,00 / B 9,75 / C 10,25 €/m²; C entspricht der Maklerangabe 900–950 €. Hausgeld unbekannt, geschätzt. Reno 2.000 € Vermietungsvorbereitung."
+  },
+  {
+    "id": "K2",
+    "name": "VS (78052), 3-Zi-EG 89,82 m², Vonovia-Bestand",
+    "typ": "ETW",
+    "preis": 149500,
+    "wfl": 89.82,
+    "einheiten": 1,
+    "makler_pct": 0.0,
+    "reno": 0,
+    "hausgeld_nu": 105.33,
+    "miete": {
+      "A": 606,
+      "B": 606,
+      "C": 650
+    },
+    "quelle": "https://www.kleinanzeigen.de/s-anzeige/3331821967",
+    "annahmen": "Ist-Kaltmiete 606,29 € (seit 2009) = 6,75 €/m². Hausgeld 260,15 €, davon 154,82 € umlegbar → 105,33 € nicht umlagefähig (Inseratsangabe). Mietspiegel VS 2024 (Zone 3, Bj. 1978–94): ca. 7,05 €/m² → kaum Erhöhungsspielraum; C: +7 % nach neuem Mietspiegel (ab ca. 12/2026, unverifiziert)."
+  },
+  {
+    "id": "K3",
+    "name": "VS (78052), 4,5-Zi 104,99 m² + TG, Vonovia-Bestand",
+    "typ": "ETW",
+    "preis": 185500,
+    "wfl": 104.99,
+    "einheiten": 1,
+    "makler_pct": 0.0,
+    "reno": 0,
+    "hausgeld_nu": 153.48,
+    "miete": {
+      "A": 786,
+      "B": 786,
+      "C": 820
+    },
+    "quelle": "https://www.kleinanzeigen.de/s-anzeige/2399991321",
+    "annahmen": "Preis 174.500 € Wohnung + 11.000 € TG-Platz. Ist 731,78 € (6,97 €/m²) + 54 € TG. Hausgeld 480,11 € + 6,24 €, davon 331,20 € + 1,67 € umlegbar → 153,48 € nicht umlagefähig. Rücklage Häuser 18–24: 148.802 € (31.12.2025). Miete liegt bereits auf Mietspiegel-Niveau (ca. 6,95 €/m²); C: +5 % nach neuem Mietspiegel."
+  },
+  {
+    "id": "K4",
+    "name": "Tuttlingen, 4-Zi-DG 79,4 m², 8-Parteien-Haus (Vonovia)",
+    "typ": "ETW",
+    "preis": 146300,
+    "wfl": 79.4,
+    "einheiten": 1,
+    "makler_pct": 0.0,
+    "reno": 0,
+    "hausgeld_nu": null,
+    "miete": {
+      "A": 596,
+      "B": 596,
+      "C": 690
+    },
+    "quelle": "https://www.kleinanzeigen.de/s-anzeige/2503852388",
+    "annahmen": "Ist 7.146 €/Jahr = 595,50 €/Monat (seit 04/2023). Hausgeld unbekannt, geschätzt. C: Mieterhöhung auf ca. 8,7 €/m² (+16 %)."
+  },
+  {
+    "id": "K5",
+    "name": "Seitingen-Oberflacht, 3-Zi-DG 86,64 m² + Garage + Stellplatz",
+    "typ": "ETW",
+    "preis": 195000,
+    "wfl": 86.64,
+    "einheiten": 1,
+    "makler_pct": 0.0357,
+    "reno": 0,
+    "hausgeld_nu": null,
+    "miete": {
+      "A": 800,
+      "B": 850,
+      "C": 850
+    },
+    "quelle": "https://www.kleinanzeigen.de/s-anzeige/3430547265",
+    "annahmen": "Neu vermietet ab 01.08.2026 für 850 € kalt (9,81 €/m²). Provision im Inserat nicht angegeben (Makler), daher konservativ 3,57 % angesetzt. A: Wiedervermietung zu 9,25 €/m²."
+  },
+  {
+    "id": "K6",
+    "name": "VS-Schwenningen (Rieten/Sauerwasen), 2-Zi-DG 60 m² im 3-Familienhaus (1937)",
+    "typ": "ETW",
+    "preis": 135000,
+    "wfl": 60,
+    "einheiten": 1,
+    "makler_pct": 0.0357,
+    "reno": 0,
+    "hausgeld_nu": null,
+    "miete": {
+      "A": 550,
+      "B": 660,
+      "C": 750
+    },
+    "quelle": "https://www.kleinanzeigen.de/s-anzeige/3388459855",
+    "annahmen": "Ist 750 € kalt = 12,50 €/m² (Maklerangabe). Mietspiegel VS 2024 für 60 m², Bj. 1919–77, ca. 7,6–7,9 €/m² → Ist-Miete rd. 60 % über Vergleichsmiete. A: Absenkung auf ca. 120 % Mietspiegel (Rechtsrisiko § 5 WiStG), B: nachhaltige Neuvermietung 11 €/m², C: Ist-Miete hält."
+  },
+  {
+    "id": "K7",
+    "name": "VS-Schwenningen, 3,5-Zi-EG 85,4 m² + Garage (Zwangsversteigerung)",
+    "typ": "ETW",
+    "preis": 160000,
+    "wfl": 85.4,
+    "einheiten": 1,
+    "makler_pct": 0.0,
+    "reno": 3000,
+    "hausgeld_nu": null,
+    "miete": {
+      "A": 700,
+      "B": 750,
+      "C": 790
+    },
+    "quelle": "https://www.kleinanzeigen.de/s-anzeige/3527919441",
+    "annahmen": "Zwangsversteigerung; Verkehrswert 200.000 € (Gutachten 12.11.2025); Bank stellt sich mindestens 160.000 € vor. Vermietungsstand unbekannt. Miete A 8,20 / B 8,78 / C 9,25 €/m² (Mietspiegel VS 2024 ca. 7,3–7,6 €/m²; Neuvermietung darüber zulässig, keine Mietpreisbremse). 3.000 € Schönheitsreparaturen."
+  },
+  {
+    "id": "K8",
+    "name": "Spaichingen, 3-Zi-ETW 65 m² im 6-Parteien-Haus (1953)",
+    "typ": "ETW",
+    "preis": 98000,
+    "wfl": 65,
+    "einheiten": 1,
+    "makler_pct": 0.0357,
+    "reno": 3000,
+    "hausgeld_nu": null,
+    "miete": {
+      "A": 536,
+      "B": 569,
+      "C": 601
+    },
+    "quelle": "https://immo.schwaebische.de/immobilien/3-zimmer-wohnung-in-ruhiger-zentraler-lage-H2N9Q2",
+    "annahmen": "Nur Kurzbeschreibung verfügbar (Quelle immowelt, über immo.schwaebische.de live geprüft). Vermietungsstand und Provision unbekannt (konservativ 3,57 %). Miete A 8,25 / B 8,75 / C 9,25 €/m²."
+  },
+  {
+    "id": "K9",
+    "name": "Tuttlingen, Doppelhaushälfte mit 2 vermieteten WE (Denkmal)",
+    "typ": "MFH",
+    "preis": 219000,
+    "wfl": 126,
+    "einheiten": 2,
+    "makler_pct": 0.0357,
+    "reno": 0,
+    "hausgeld_nu": null,
+    "miete": {
+      "A": 1000,
+      "B": 1000,
+      "C": 1180
+    },
+    "quelle": "https://www.kleinanzeigen.de/s-anzeige/3467256118",
+    "annahmen": "Kaltmiete rund 1.000 €/Monat (Maklerangabe, 7,94 €/m²). Ofenheizung, Denkmalschutz. C: Werkstatt vermietet (+80 €) und Mieten +10 %."
+  }
+]
