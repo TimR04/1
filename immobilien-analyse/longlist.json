@@ -247,7 +247,7 @@
   "miete": null,
   "mtyp": "?",
   "status": "vermietet (lt. Text)",
-  "zustand": "n.a.",
+  "zustand": "nicht angegeben",
   "quelle": "https://immo.schwaebische.de/immobilien/mehrfamilienhaus-mit-3-wohneinheiten-in-universitaerer-lage-GS5RPJ",
   "screening": "nicht finanzierbar",
   "brutto": null,
@@ -443,7 +443,7 @@
  },
  {
   "id": "L27",
-  "ort": "VS-Villingen",
+  "ort": "VS-Schwenningen (Rieten/Sauerwasen)",
   "art": "ETW 2 Zi DG (3-FH)",
   "preis": 135000,
   "wfl": 60,
@@ -460,7 +460,7 @@
  },
  {
   "id": "L28",
-  "ort": "VS-Villingen",
+  "ort": "VS-Schwenningen (Rieten/Sauerwasen)",
   "art": "ETW 3 Zi (3-FH)",
   "preis": 205000,
   "wfl": 88.48,
